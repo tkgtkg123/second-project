@@ -1,0 +1,36 @@
+.space {
+  height: 20px;
+  width: 100vw;
+}
+
+.content-area {
+  height: 100vh;
+  width: 100vw;
+}
+.content-area .content-list {
+  padding: 0;
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  list-style-type: none;
+}
+.content-area .content-list .item {
+  display: block;
+  background-color: rgb(165, 206, 252);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 25vh;
+  font-size: 22px;
+  border: 2px solid #b8b7d4;
+  border-radius: 65px;
+  box-shadow: 2px 3px 12px black;
+  text-decoration: none;
+}
+.content-area .content-list .item:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */

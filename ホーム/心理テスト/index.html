@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="/リセットCSS/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+    <title>心理テスト</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="header">
+                <div class="logo-area">
+                    <img class="logo" src="/ロゴ/logo2.png" alt="logo">
+                </div>
+                <div class="button-area">
+                    <button class="btn logout"><a href="/ログインページ/index.html">ログアウト</a></button>
+                </div>
+            </div>
+
+            <div class="space"></div>
+
+            <div class="content-area">
+                <ul class="content-list">
+                    <li class="content">
+                        <div class="psychological_test">
+                            <p class="qestion">Q1. 目の前に川が流れています。その川はどれくらい濁っていますか？</p>
+                            <button id="q1_btn" value="answer_request">答え</button>
+                            <p id="a1" class="answer">A. 川の濁り具合はあなたの心の疲れ度です。</p>
+                        </div>
+                    </li>
+                    <li class="content">
+                        <div class="psychological_test">
+                            <p class="qestion">Q2. みんなで旅行に行くとき集合場所に集まったら誰より大きな荷物を持って来た人がいました。
+                                                <br>その人は次の内誰でしょう？
+                                                <br>選択肢の他に思いついた人がいたらその人でもいいですよ。
+                            </p>
+                            <button id="q2_btn" value="answer_request">答え</button>
+                            <p id="a2" class="answer">A. それはあなたにとってちょっとやっかいな人です。</p>
+                        </div>
+                    </li>
+                    <li class="content">
+                        <div class="psychological_test">
+                            <p class="qestion">Q3. あなたが書いた文章や書類の誤字脱字を「ここ間違ってるよ」とわざわざ言って直してくる人がいます。
+                                <br>その人は次の内誰でしょう？
+                                <br>選択肢の他に思いついた人がいたらその人でもいいですよ。
+                            </p>
+                            <button id="q3_btn" value="answer_request">答え</button>
+                            <p id="a3" class="answer">A. その人はあなたと親しくなりたいひとです。</p>
+                        </div>
+                    </li>
+                    <li class="content">
+                        <div class="psychological_test">
+                            <p class="qestion">Q4. あなたは大切な鍵をなくしてしまいました。どれだけ探しても出てきません。そのときあなたの鍵を見つけてくれた人がいます。
+                                <br>その人は次の内誰でしょう？
+                                <br>選択肢の他に思いついた人がいたらその人でもいいですよ。
+                            </p>
+                            <button id="q4_btn" value="answer_request">答え</button>
+                            <p id="a4" class="answer">A. その人はあなたが信頼して悩みを打ち明けたり相談ができる人です。</p>
+                        </div>
+                    </li>
+                    <li class="content">
+                        <div class="psychological_test">
+                            <p class="qestion">Q5. あなたのお気に入りの文房具があります。ふと見ると誰かが勝手に使っていました。その人の年齢はいくつですか？</p>
+                            <button id="q5_btn" value="answer_request">答え</button>
+                            <p id="a5" class="answer">A. それはあなたの精神年齢です。</p>
+                        </div>
+                    </li>
+                    <li class="content">
+                        <div class="psychological_test">
+                            <p class="qestion">Q6. ジャムの瓶のフタが固くて開きません。あなたはどうやって開けようとしますか？</p>
+                            <button id="q6_btn" value="answer_request">答え</button>
+                            <p id="a6" class="answer">A. それはあなたが人にものを頼むときのやり方です。</p>
+                        </div>
+                    </li>
+                    <li class="content">
+                        <div class="psychological_test">
+                            <p class="qestion">Q7. 部屋の隅にちいさな子どもがうずくまっています。あなたはその子に向かって何と声をかけますか？
+                                            <br>また、どんなことをしてあげますか？
+                            </p>
+                            <button id="q7_btn" value="answer_request">答え</button>
+                            <p id="a7" class="answer">A. それは自分が傷ついているときにどうして欲しいかです。</p>
+                        </div>
+                    </li>
+                    <li class="content">
+                        <div class="psychological_test">
+                            <p class="qestion">Q8. あなたは川岸に立っています。川の向こうに立っている人の姿が見えます。
+                                            <br>それはどんな人ですか？性別・性格・どんなことをしている人ですか？
+                            </p>
+                            <button id="q8_btn" value="answer_request">答え</button>
+                            <p id="a8" class="answer">A. それはあなたが別の人生を与えられたらなってみたい人です。</p>
+                        </div>
+                    </li>
+                    <li class="content">
+                        <div class="psychological_test">
+                            <p class="qestion">Q9. あなたが狭い一本道を歩いていると向こうから人が歩いてきました。
+                                            <br>近づいてきたらその人はあなたにどんな態度を取りましたか？
+                            </p>
+                            <button id="q9_btn" value="answer_request">答え</button>
+                            <p id="a9" class="answer">A. それはあなた自身が他人に取っている態度です。</p>
+                        </div>
+                    </li>
+                    <li class="content">
+                        <div class="psychological_test">
+                            <p class="qestion">Q10. あなたは皿洗いをしていて今は洗い終わって拭いているところです。あなたが洗ったお皿は何枚ありましたか？</p>
+                            <button id="q10_btn" value="answer_request">答え</button>
+                            <p id="a10" class="answer">A. それはあなたが欲しい友達の人数です。</p>
+                        </div>
+                    </li>
+                    <li class="content">
+                        <div class="psychological_test">
+                            <p class="qestion">Q11. 久しぶりに昔住んでいた街に来ました。そこには当時からあったお店が今もありました。
+                                <br>そのお店に入るとサービスで飲み物を出してくれました。その飲み物はどんな味がしましたか？
+                            </p>
+                            <button id="q11_btn" value="answer_request">答え</button>
+                            <p id="a11" class="answer">A. それはあなたが感じている過去の人生の味わいです。</p>
+                        </div> 
+                    </li>
+                    <li class="content">
+                        <div class="psychological_test">
+                            <p class="qestion">Q12. あなたは傘を持たずに外出しました。すると急に雨が降ってきました。雨に濡れているあなたに傘をさしかけてくれた人がいます。それは誰ですか？</p>
+                            <button id="q12_btn" value="answer_request">答え</button>
+                            <p id="a12" class="answer">A. それはあなたが守ってもらいたい、甘えてみたいひとです。</p>
+                        </div>
+                    </li>
+                    </li>
+                    <li class="content">
+                        <div class="psychological_test">
+                            <p class="qestion">Q13. あなたが生まれ変わるとしたら、次のうちどれを選びますか？</p>
+                            <button id="q13_btn-1" value="answer_request">白雪姫</button>
+                            <button id="q13_btn-2" value="answer_request">かぐや姫</button>
+                            <button id="q13_btn-3" value="answer_request">人魚姫</button>
+                            <button id="q13_btn-4" value="answer_request">赤ずきんちゃん</button>
+                            <button id="q13_btn-5" value="answer_request">シンデレラ</button>
+                            <p id="a13-1" class="answer">A. 白雪姫を選んだあなたは、 次の人生では、恋に生きたいと考えているようです。<br>現在は、本当に望む恋愛ができていないのでは？</p>
+                            <p id="a13-2" class="answer">A. かぐや姫を選んだあなたは、お金が何よりも重要だと考えているため、とにかくお金持ちになりたいと考えています。</p>
+                            <p id="a13-3" class="answer">A. 人魚姫を選んだあなたは、本能的・官能的な快楽を求めています。次の人生では抑圧されずに解放されたいようです。</p>
+                            <p id="a13-4" class="answer">A. 赤ずきんちゃんを選んだあなたは、暖かい家庭を作り、幸せに暮らしたいと考えています。<br>もしかしたら現在は恵まれていないと感じていたり、家族をないがしろにしてしまっていませんか？</p>
+                            <p id="a13-5" class="answer">A. シンデレラを選んだあなたは、道徳や純粋な心を持つ人になりたいと考えています。<br>現在は罪悪感を感じているのかもしれません。</p>
+                        </div>
+                    </li>
+                    <li class="content">
+                        <div class="psychological_test">
+                            <p class="qestion">Q14. あなたは恋人と遊園地に来ています。絶対に体験したいアトラクションは、次のうちどれですか？</p>
+                            <button id="q14_btn-1" value="answer_request">バンジージャンプ</button>
+                            <button id="q14_btn-2" value="answer_request">レーシングカート</button>
+                            <button id="q14_btn-3" value="answer_request">観覧車</button>
+                            <button id="q14_btn-4" value="answer_request">ジェットコースター</button>
+                            <p id="4-1" class="answer">A. バンジージャンプを選んだあなたは、病的に相当惚れっぽいので、すぐに人のことを好きになってしまいます。
+                                                        <br>好きな人のことはどんなことをしても手に入れたい、積極的にアプローチするようです。
+                            </p>
+                            <p id="4-2" class="answer">A. レーシングカートを選んだあなたは、異性の何気ない発言を自分なりにポジティブに解釈し、好意を寄せてしまいます。
+                                                        <br>相手の本位を知る気持ちが欠けていると言えるでしょう。
+                            </p>
+                            <p id="4-3" class="answer">A. 観覧車を選んだあなたは、段階を踏んで相手のことを知ろうとする、慎重なタイプです。
+                                                        <br>惚れっぽいということはありません。ただ、どんなことをしても相手を知ろうとするパッションがあります。
+                            </p>
+                            <p id="4-4" class="answer">A. ジェットコースターを選んだあなたは、適度に相手のことを知り、次第に恋心を燃え上がらせるタイプです。
+                                                        <br>惚れっぽさや行動力は平均的と言えるでしょう。
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+                <!-- <div class="logout-area">
+                   <p class="logout"><a href="/ログインページ/index.html">ログアウト</a></p>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- <div class="genre">恋愛</div>
+        <div class="genre">仕事</div>
+        <div class="genre">家族</div>
+        <div class="genre">友達</div>
+        <div class="genre">エロ</div>
+        <div class="genre">mbti</div>
+        <div class="genre">snowman</div> -->
+    
+        <!-- <h1 class="title">ドライブに最適な心理テスト</h1>
+        <h2 class="subtitle">項目
+            <div class="explanation">ドライブに最適な心理テスト<br>
+                ～まほちゃんにピッタリな心理テストを集めてみた～
+            </div>
+        </h2> -
+
+    </main>    
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+.header {
+  background-color: rgb(255, 119, 0);
+  height: 4em;
+  width: 100vw;
+  display: flex;
+
+  & .logo-area {
+    // background-color: purple;
+    height: 100%;
+    width: 50%;;
+    display: flex;
+    justify-content: flex-start;
+
+    & .logo {
+      // background-color: white;
+      border: 2px solid black;
+      height: 51px;
+      width: 71px;
+      // height: 80%;
+      // width: 10%;
+      margin: 5px 0 5px 40px;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+
+  & .button-area {
+    // background-color: orange;
+    height: 100%;
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+
+    & .btn {
+      height: 80%;
+      margin: 1% 1em;
+      font-size: 15px;
+      border-radius: 5px;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+
+    & .logout {
+      margin-right: 0;
+    }
+  }
+}
+
+.space {
+  // background-color: red;
+  height: 20px;
+  width: 100vw;
+  
+}
+
+.content-area{
+  // background-color: green;
+  height: 100vh;
+  width: 100vw;
+  
+  // & .content-list {
+  //   // background-color: yellow;
+  //   padding: 0;
+  //   // margin: auto;
+  //   width: 80%;
+  //   display: grid;
+  //   // grid-template-columns: 1fr 1fr 1fr;
+  //   // grid-template-rows: 1fr 1fr;
+  //   gap: 30px;
+  //   list-style-type: none;
+    
+  //   // & .content {
+  //   //   background-color: rgb(165, 206, 252);
+  //   //   height: 100%;
+  //   //   width: 100%;
+  //   //   text-align: center;
+  //   //   vertical-align: middle;
+  //   //   line-height: 25vh;
+  //   //   font-size: 22px;
+  //   //   border: 2px solid saturate($color: #b8b7d4, $amount: 0);
+  //   //   border-radius: 65px;
+  //   //   box-shadow: 2px 3px 12px black;
+      
+  //   //   &:hover {
+  //   //     cursor: pointer;
+  //   //   }
+  //   // }
+  // }
+
+  & .logout-area {
+    // background-color: red;
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px auto;
+    width: 80%;
+
+    & .logout {
+      font-size: 18px;
+      color: blue;
+
+      &:hover {
+        color: gray;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+

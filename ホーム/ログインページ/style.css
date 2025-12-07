@@ -1,0 +1,103 @@
+.header {
+  background-color: rgb(255, 119, 0);
+  height: 4em;
+  width: 100vw;
+  display: flex;
+}
+.header .logo-area {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+.header .logo-area .logo {
+  border: 2px solid black;
+  height: 51px;
+  width: 71px;
+  margin: 5px 0 5px 40px;
+}
+.header .logo-area .logo:hover {
+  cursor: pointer;
+}
+
+.space {
+  height: 20px;
+  width: 100vw;
+}
+
+.inform-area {
+  height: 100vh;
+  width: 100vw;
+}
+.inform-area .login-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 500px;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.inform-area .login-area .user-id {
+  display: flex;
+}
+.inform-area .login-area .user-id .user-id-moji {
+  font-size: 1.5em;
+}
+.inform-area .login-area .user-id .user-id-inform {
+  font-size: 1.5em;
+  width: 10em;
+}
+.inform-area .login-area .note-id {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 15px 0;
+}
+.inform-area .login-area .note-id .note-id-moji {
+  font-size: 1.2em;
+}
+.inform-area .login-area .user-pw {
+  display: flex;
+}
+.inform-area .login-area .user-pw .user-pw-moji {
+  font-size: 1.5em;
+}
+.inform-area .login-area .user-pw .user-pw-inform {
+  font-size: 1.5em;
+  width: 10em;
+}
+.inform-area .login-area .note-pw {
+  display: flex;
+  justify-content: flex-end;
+}
+.inform-area .login-area .note-pw .note-pw-moji {
+  font-size: 1.2em;
+}
+.inform-area .login-area .submit-area {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.inform-area .login-area .submit-area .submit-btn {
+  font-size: 1.2em;
+}
+.inform-area .login-area .submit-area .submit-btn:hover {
+  cursor: pointer;
+}
+.inform-area .login-area .help-area {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1em 0 0 0;
+}
+.inform-area .login-area .help-area .help {
+  font-size: 1.2em;
+  color: blue;
+  -webkit-text-decoration: underline blue 3px;
+          text-decoration: underline blue 3px;
+}
+.inform-area .login-area .help-area .help:hover {
+  color: gray;
+  cursor: pointer;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

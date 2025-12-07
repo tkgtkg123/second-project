@@ -1,0 +1,134 @@
+.header {
+  background-color: rgb(255, 119, 0);
+  height: 4em;
+  width: 100vw;
+  display: flex;
+
+  & .logo-area {
+    // background-color: purple;
+    height: 100%;
+    width: 50%;;
+    display: flex;
+    justify-content: flex-start;
+
+    & .logo {
+      // background-color: white;
+      border: 2px solid black;
+      height: 51px;
+      width: 71px;
+      // height: 80%;
+      // width: 10%;
+      margin: 5px 0 5px 40px;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.space {
+  // background-color: red;
+  height: 20px;
+  width: 100vw;
+}
+
+.inform-area{
+  // background-color: green;
+  height: 100vh;
+  width: 100vw;
+
+  & .login-area{
+    // background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    & .user-id {
+      // background-color: yellow;
+      display: flex;
+      // margin: 15px 0;
+
+      & .user-id-moji {
+        font-size: 1.5em;
+      }
+
+      & .user-id-inform {
+        font-size: 1.5em;
+        width: 10em;
+      }
+    }
+
+    & .note-id {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 0 15px 0;
+      
+      & .note-id-moji {
+        font-size: 1.2em;
+      }
+    }
+    
+    & .user-pw {
+      // background-color: pink;
+      display: flex;
+      
+      & .user-pw-moji {
+        font-size: 1.5em;
+      }
+  
+      & .user-pw-inform {
+        font-size: 1.5em;
+        width: 10em;
+      }
+    }
+
+    & .note-pw {
+      display: flex;
+      justify-content: flex-end;
+      
+      & .note-pw-moji {
+        font-size: 1.2em;
+      }
+    }
+
+    & .submit-area {
+      // background-color: red;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 10px;
+      
+      & .submit-btn {
+        font-size: 1.2em;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    & .help-area {
+      display: flex;
+      justify-content: flex-end;
+      margin: 1em 0 0 0;
+
+      & .help {
+        font-size: 1.2em;
+        color: blue;
+        text-decoration: underline blue 3px;
+
+        &:hover {
+          color: gray;
+          cursor: pointer;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+

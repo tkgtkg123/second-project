@@ -1,0 +1,97 @@
+.header {
+  background-color: rgb(255, 119, 0);
+  height: 4em;
+  width: 100vw;
+  display: flex;
+}
+.header .logo-area {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+.header .logo-area .logo {
+  border: 2px solid black;
+  height: 51px;
+  width: 71px;
+  margin: 5px 0 5px 40px;
+}
+.header .logo-area .logo:hover {
+  cursor: pointer;
+}
+.header .button-area {
+  height: 100%;
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.header .button-area .btn {
+  height: 80%;
+  margin: 1% 1em;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.header .button-area .btn:hover {
+  cursor: pointer;
+}
+.header .button-area .logout {
+  margin-right: 0;
+}
+
+.space {
+  height: 20px;
+  width: 100vw;
+}
+
+.content-area {
+  width: 100vw;
+  padding: 0 0 100px 0;
+}
+.content-area .content-list {
+  padding: 0;
+  margin: auto;
+  width: 80%;
+  list-style-type: none;
+}
+.content-area .content-list .content {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 22px;
+  border: 2px solid #b8b7d4;
+  border-radius: 15px;
+}
+.content-area .content-list .content:hover {
+  cursor: pointer;
+}
+.content-area .content-list .content .qestion {
+  margin: 15px 0;
+}
+.content-area .content-list .content.answer_request {
+  margin: 10px 0;
+}
+.content-area .content-list .content .answer {
+  margin: 5px 0 15px 0;
+  display: none;
+}
+.content-area .content-list .content .show-answer {
+  display: block;
+}
+.content-area .logout-area {
+  display: flex;
+  justify-content: flex-end;
+  margin: 50px auto;
+  width: 80%;
+}
+.content-area .logout-area .logout {
+  font-size: 18px;
+  color: blue;
+}
+.content-area .logout-area .logout:hover {
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

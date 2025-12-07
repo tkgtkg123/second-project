@@ -1,0 +1,47 @@
+.space {
+  height: 20px;
+  width: 100vw;
+}
+
+.content-area {
+  background-color: green;
+  width: 100vw;
+  padding: 0 0 100px 0;
+}
+.content-area .content-list {
+  background-color: yellow;
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.content-area .content-list .item {
+  margin: 30px 0 0 0;
+  width: 50vw;
+}
+.content-area .content-list .item .text {
+  font-size: 18px;
+}
+.content-area .content-list .story-area {
+  display: none;
+}
+.content-area .content-list .picture-area {
+  background-color: blue;
+  height: 200px;
+  width: 25vw;
+}
+.content-area .logout-area {
+  display: flex;
+  justify-content: flex-end;
+  margin: 50px auto;
+  width: 80%;
+}
+.content-area .logout-area .logout {
+  font-size: 18px;
+  color: blue;
+}
+.content-area .logout-area .logout:hover {
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}/*# sourceMappingURL=kaguya-story.css.map */

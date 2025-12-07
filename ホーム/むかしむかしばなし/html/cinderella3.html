@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="/リセットCSS/reset.css">
+    <link rel="stylesheet" href="/style-header.css">
+    <link rel="stylesheet" href="/むかしむかしばなし/styles/cinderella-story.css">
+    <title>シンデレラ3</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="header">
+                <div class="logo-area">
+                    <img class="logo" src="/ロゴ/logo2.png" alt="logo">
+                </div>
+                <div class="button-area">
+                    <a class="btn story" href="/むかしむかしばなし/html/index.html">ストーリー</a>
+                    <a class="btn home" href="/index.html">ホーム</a>
+                    <a class="btn logout" href="/ログインページ/index.html">ログアウト</a>
+                </div>
+            </div>
+            <div class="content-area">
+                <ul class="content-list">
+                    <li class="item picture-area" id="item1">
+                        <div class="picture">
+                        </div>
+                    </li>
+                    <li class="item qestion-area" id="item1.5">
+                        <div class="text-area">
+                            <div class="content qestion-content">
+                                <p class="text" id="q-text1">
+                                    <p>
+                                        Q1.あなたにとって大切なものは？
+                                    </p>
+                                    <input type="text" id="q1" placeholder="(例) 家族、お金">
+                                </p>
+                                <p class="text" id="q-text2">
+                                    <p>
+                                        Q.2あなたの好きな動物は？
+                                    </p>
+                                    <input type="text" id="q2" placeholder="(例) ライオン">
+                                </p>
+                                <p class="text" id="q-text3">
+                                    <p>
+                                        Q.3あなたが言われて励まされる言葉は？
+                                    </p>
+                                    <input type="text" id="q3" placeholder="(例) 今年はボーナス２倍">
+                                </p>
+                                <p class="text" id="q-text4">
+                                    <p>
+                                        Q.4あなたの過去の失敗談を教えてください。
+                                    </p>
+                                    <input type="text" id="q4" placeholder="(例) 歯磨き粉とシャンプーを間違えてしまったこと">
+                                </p>
+                                <p class="text" id="q-text5">
+                                    <p>
+                                        Q.5あなたが言われて感動した一言（心に残っている一言）を教えてください。
+                                    </p>
+                                    <input type="text" id="q5" placeholder="(例) やらない善よりやる偽善！">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="answer-btn">
+                            <button id="a-btn" type="button">回答</button>
+                        </div>
+                    </li>
+                    <li class="item story-area" id="item2">
+                        <div class="text-area">
+                            <div>
+                                <p>
+                                    👠【質問1】あなたがお気に入りの靴や服のブランドは？（シンデレラの靴や装飾に反映）
+
+                                    🥪【質問2】今日のランチは何を食べたい？（シンデレラの舞踏会前の腹ごしらえや気分に反映）
+
+                                    🎨【質問3】自分の好きな色は？（ドレスや魔法の色に反映）
+
+                                    😆【質問4】友達と遊ぶときに言いたくなる一言は？（舞踏会での掛け声やセリフに反映）
+
+                                    💡【質問5】最近「わー！」と思った楽しい出来事は？（舞踏会の小さなハプニングや喜びに反映）
+
+                                    🍫【質問6】好きなデザートは？（舞踏会でのケーキやお菓子に反映）
+
+                                    🏰【質問7】理想の場所や空間は？（舞踏会や部屋の雰囲気に反映）
+
+                                    🎶【質問8】好きな音楽ジャンルや曲は？（舞踏会でのBGMやシーンの雰囲気に反映）
+                                </p>
+                            </div>
+                            <div class="content" id="p1"><p class="text" id="text1">むかしむかし、優しい少女シンデレラが古い屋敷で暮らしていました。</p></div>
+                            <div class="content" id="p2"><p class="text" id="text2">今日は特別な日。彼女は「${Q1}」を履き、ちょっとワクワクしていました。</p></div>
+                            <div class="content" id="p3"><p class="text" id="text3">でも家の雑用や義姉のわがままに追われ、「${Q2}」を食べる時間もなくため息。</p></div>
+                            <div class="content" id="p4"><p class="text" id="text4">そこへ突然、魔法使いが現れました。「さあ、準備はいい？」</p></div>
+                            <div class="content" id="p5"><p class="text" id="text5">魔法の杖で「${Q3}」色のドレスが輝き、屋敷の空気はパッと明るくなりました。</p></div>
+                            <div class="content" id="p6"><p class="text" id="text6">舞踏会の会場に着くと、シンデレラは友達に「${Q4}！」と元気よく挨拶しました。</p></div>
+                            <div class="content" id="p7"><p class="text" id="text7">そのとき、王子が目を見張る瞬間が。「あれ？この子、なんだか楽しそう！」</p></div>
+                            <div class="content" id="p8"><p class="text" id="text8">舞踏会の間、シンデレラは「${Q5}」の出来事を思い出して思わず笑顔。</p></div>
+                            <div class="content" id="p9"><p class="text" id="text9">舞踏会では「${Q6}」がふんだんに並び、彼女の目はキラキラと輝きました。</p></div>
+                            <div class="content" id="p10"><p class="text" id="text10">会場の装飾は「${Q7}」そのもの。魔法のような時間が流れます。</p></div>
+                            <div class="content" id="p11"><p class="text" id="text11">音楽が流れると、シンデレラは「${Q8}」に合わせて軽やかに踊りました。</p></div>
+                            <div class="content" id="p12"><p class="text" id="text12">時計が12時を指すと、魔法が少しずつ解け始めました。</p></div>
+                            <div class="content" id="p13"><p class="text" id="text13">シンデレラは焦らず、片方の「${Q1}」を残して王子にメモを残しました。</p></div>
+                            <div class="content" id="p14"><p class="text" id="text14">王子はその靴を手に、シンデレラを探しに家へ向かいます。</p></div>
+                            <div class="content" id="p15"><p class="text" id="text15">家ではシンデレラが「${Q2}」を頬張りながら、今日の出来事を思い出して笑っていました。</p></div>
+                            <div class="content" id="p16"><p class="text" id="text16">王子と再会した二人は、魔法以上の絆を感じ、日常の中でも互いに心を寄せ合うようになりました。</p></div>
+                            <div class="content" id="p17"><p class="text" id="text17">――めでたし、めでたし。</p></div>
+
+                        </div>
+                    </li>
+                    <li class="item picture-area" id="item3">
+                        <div class="picture">
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </main>    
+
+</body>
+
+</html>

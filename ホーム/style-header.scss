@@ -1,0 +1,55 @@
+.header {
+  background-color: rgb(255, 119, 0);
+  height: 4em;
+  width: 100vw;
+  display: flex;
+
+  & .logo-area {
+    // background-color: purple;
+    height: 100%;
+    width: 50%;;
+    display: flex;
+    justify-content: flex-start;
+
+    & .logo {
+      // background-color: white;
+      border: 2px solid black;
+      height: 51px;
+      width: 71px;
+      // height: 80%;
+      // width: 10%;
+      margin: 5px 0 5px 40px;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+
+  & .button-area {
+    // background-color: orange;
+    height: 100%;
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+
+    & .btn {
+      background-color: whitesmoke;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      margin: 0 10px;
+      padding: 10px;
+      font-size: 15px;
+      border: 2px solid black;
+      border-radius: 5px;
+      text-decoration: none;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+body {
+    font-family: "Hiragino Maru Gothic Pro", "Yu Gothic", sans-serif;
+    background: linear-gradient(#c9e9f6, #f9f9f9);
+    color: #333;
+    padding: 0 2rem 2rem 2rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* --- ヘッダーの余白調整のみ（デザインは別CSSで）--- */
+.header {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.question {
+    margin: 1.2rem 0;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+button {
+    display: block;
+    margin: 1.5rem auto;
+    background: #3fa9f5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #2e8bca;
+}
+
+.story {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+}
+
+.content {
+    margin-bottom: 0.7rem;
+}
+
+.text {
+    margin: 0;
+}

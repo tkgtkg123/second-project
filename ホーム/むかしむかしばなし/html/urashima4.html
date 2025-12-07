@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/リセットCSS/reset.css">
+  <link rel="stylesheet" href="/style-header.css">
+  <link rel="stylesheet" href="/むかしむかしばなし/styles/urashima4-story.css">
+  <title>心理テスト × 浦島太郎</title>
+ 
+</head>
+<body>
+
+  <!-- ▼ あなた指定のヘッダーをここに挿入 ▼ -->
+  <div class="header">
+    <div class="logo-area">
+      <img class="logo" src="/ロゴ/logo2.png" alt="logo">
+    </div>
+    <div class="button-area">
+      <a class="btn story" href="/むかしむかしばなし/html/index.html">ストーリー</a>
+                    <a class="btn home" href="/index.html">ホーム</a>
+      <a class="btn logout" href="/ログインページ/index.html">ログアウト</a>
+    </div>
+  </div>
+  <!-- ▲ ヘッダーここまで ▲ -->
+
+
+  <h1>🐢 心理テスト × 浦島太郎 🐚</h1>
+
+  <div id="questions">
+    <div class="question">
+      <label>① 最近「助けたい」と思ったもの・人・出来事は？</label>
+      <input type="text" id="q1">
+    </div>
+    <div class="question">
+      <label>② 海の色をひとつ選ぶとしたら？（例：深い青、エメラルドグリーン、灰色など）</label>
+      <input type="text" id="q2">
+    </div>
+    <div class="question">
+      <label>③ 竜宮城でどんなごちそうを食べたい？</label>
+      <input type="text" id="q3">
+    </div>
+    <div class="question">
+      <label>④ 玉手箱を開けたとき、中から何が出てきた？</label>
+      <input type="text" id="q4">
+    </div>
+    <div class="question">
+      <label>⑤ 乙姫があなたに「ひとこと」贈るとしたら？</label>
+      <textarea id="q5"></textarea>
+    </div>
+
+    <button onclick="makeStory()">物語を読む 🌊</button>
+  </div>
+
+  <div id="story" class="story" style="display:none;"></div>
+
+  <script src="script/main_urashima4.js"></script>
+</body>
+</html>

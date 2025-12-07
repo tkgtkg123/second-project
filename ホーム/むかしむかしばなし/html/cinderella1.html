@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="/リセットCSS/reset.css">
+    <link rel="stylesheet" href="/style-header.css">
+    <link rel="stylesheet" href="/むかしむかしばなし/styles/cinderella-story.css">
+    <title>シンデレラ1</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="header">
+                <div class="logo-area">
+                    <img class="logo" src="/ロゴ/logo2.png" alt="logo">
+                </div>
+                <div class="button-area">
+                    <a class="btn story" href="/むかしむかしばなし/html/index.html">ストーリー</a>
+                    <a class="btn home" href="/index.html">ホーム</a>
+                    <a class="btn logout" href="/ログインページ/index.html">ログアウト</a>
+                </div>
+            </div>
+            <div class="content-area">
+                <ul class="content-list">
+                    <li class="item picture-area" id="item1">
+                        <div class="picture">
+                        </div>
+                    </li>
+                    <li class="item qestion-area" id="item1.5">
+                        <div class="text-area">
+                            <div class="content qestion-content">
+                                <p class="text" id="q-text1">
+                                    <p>
+                                        Q1.あなたにとって大切なものは？
+                                    </p>
+                                    <input type="text" id="q1" placeholder="(例) 家族、お金">
+                                </p>
+                                <p class="text" id="q-text2">
+                                    <p>
+                                        Q.2あなたの好きな動物は？
+                                    </p>
+                                    <input type="text" id="q2" placeholder="(例) ライオン">
+                                </p>
+                                <p class="text" id="q-text3">
+                                    <p>
+                                        Q.3あなたが言われて励まされる言葉は？
+                                    </p>
+                                    <input type="text" id="q3" placeholder="(例) 今年はボーナス２倍">
+                                </p>
+                                <p class="text" id="q-text4">
+                                    <p>
+                                        Q.4あなたの過去の失敗談を教えてください。
+                                    </p>
+                                    <input type="text" id="q4" placeholder="(例) 歯磨き粉とシャンプーを間違えてしまったこと">
+                                </p>
+                                <p class="text" id="q-text5">
+                                    <p>
+                                        Q.5あなたが言われて感動した一言（心に残っている一言）を教えてください。
+                                    </p>
+                                    <input type="text" id="q5" placeholder="(例) やらない善よりやる偽善！">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="answer-btn">
+                            <button id="a-btn" type="button">回答</button>
+                        </div>
+                    </li>
+                    <li class="item story-area" id="item2">
+                        <div>
+                            <p>
+                                物語を作る前に、ユーザーに以下の質問をします：
+
+                                👠【質問1】あなたが一番大切にしているものは？
+                                　例）努力・友情・夢・自由・お金・愛・時間
+
+                                🕰️【質問2】夜12時になったら何をしてることが多い？
+                                　例）まだ起きてる・寝てる・考え事・作業・SNS・食べてる
+
+                                🐭【質問3】最近、あなたが「ちょっと我慢してること」って何？
+                                　例）仕事・恋愛・家族関係・自分の時間・趣味・お金
+
+                                👑【質問4】理想のパートナーを一言で表すと？
+                                　例）優しい人・情熱的な人・面白い人・頼れる人・自由な人
+
+                                $Q1 = 「大切にしているもの」
+                                $Q2 = 「12時にしていること」
+                                $Q3 = 「我慢していること」
+                                $Q4 = 「理想のパートナー」
+
+                            </p>
+                        </div>
+                        <div class="content" id="p1">
+                            <p class="text" id="text1">むかしむかし、心優しい少女がいました。彼女の名前はシンデレラ。</p>
+                        </div>
+                        <div class="content" id="p2">
+                            <p class="text" id="text2">彼女はいつも「${Q1}」を大切にしながら、毎日を懸命に生きていました。</p>
+                        </div>
+                        <div class="content" id="p3">
+                            <p class="text" id="text3">継母と義姉たちにこき使われながらも、シンデレラの心には小さな灯がありました。</p>
+                        </div>
+                        <div class="content" id="p4">
+                            <p class="text" id="text4">それは、夜の12時――。みんなが眠るころ、彼女は「${Q2}」をして心を落ち着けていたのです。</p>
+                        </div>
+                        <div class="content" id="p5">
+                            <p class="text" id="text5">でも最近、少し疲れていました。「${Q3}」を我慢しすぎて、心が小さく縮んでしまいそうだったのです。</p>
+                        </div>
+                        <div class="content" id="p6">
+                            <p class="text" id="text6">そんなある日、魔法使いが現れました。</p>
+                        </div>
+                        <div class="content" id="p7">
+                            <p class="text" id="text7">「あなたの心が一番輝く瞬間を見せてごらんなさい」</p>
+                        </div>
+                        <div class="content" id="p8">
+                            <p class="text" id="text8">その言葉とともに、シンデレラのボロ服は輝くドレスに変わり、ガラスの靴が足元に光りました。</p>
+                        </div>
+                        <div class="content" id="p9">
+                            <p class="text" id="text9">舞踏会で出会ったのは、「${Q4}」のような人でした。</p>
+                        </div>
+                        <div class="content" id="p10">
+                            <p class="text" id="text10">一瞬で心が通じた二人。けれど、魔法の時間はすぐに終わってしまいます。</p>
+                        </div>
+                        <div class="content" id="p11">
+                            <p class="text" id="text11">――12時の鐘が鳴り響く。</p>
+                        </div>
+                        <div class="content" id="p12">
+                            <p class="text" id="text12">でもシンデレラはもう逃げませんでした。</p>
+                        </div>
+                        <div class="content" id="p13">
+                            <p class="text" id="text13">彼女は気づいたのです。魔法は誰かがかけてくれるものではなく、自分の「${Q1}」の中にあったことを。</p>
+                        </div>
+                        <div class="content" id="p14">
+                            <p class="text" id="text14">ガラスの靴は、努力と希望の象徴。</p>
+                        </div>
+                        <div class="content" id="p15">
+                            <p class="text" id="text15">彼女は「${Q4}」のような相手と共に、自分らしく生きる道を選びました。</p>
+                        </div>
+                        <div class="content" id="p16">
+                            <p class="text" id="text16">――めでたし、めでたし。</p>
+                        </div>
+
+                        <div class="text-area">
+
+                        </div>
+                    </li>
+                    <li class="item picture-area" id="item3">
+                        <div class="picture">
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </main>    
+
+</body>
+
+</html>

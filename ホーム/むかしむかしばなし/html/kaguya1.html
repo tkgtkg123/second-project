@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="/リセットCSS/reset.css">
+    <link rel="stylesheet" href="/style-header.css">
+    <link rel="stylesheet" href="/むかしむかしばなし/styles/kaguya-story.css">
+    <title>かぐや姫1</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="header">
+                <div class="logo-area">
+                    <img class="logo" src="/ロゴ/logo2.png" alt="logo">
+                </div>
+                <div class="button-area">
+                    <a class="btn story" href="/むかしむかしばなし/html/index.html">ストーリー</a>
+                    <a class="btn home" href="/index.html">ホーム</a>
+                    <a class="btn logout" href="/ログインページ/index.html">ログアウト</a>
+                </div>
+            </div>
+            <div class="content-area">
+                <ul class="content-list">
+                    <li class="item picture-area" id="item1">
+                        <div class="picture">
+                        </div>
+                    </li>
+                    <li class="item qestion-area" id="item1.5">
+                        <div class="text-area">
+                            <div class="content qestion-content">
+                                <p class="text" id="q-text1">
+                                    <p>
+                                        Q1.あなたが今、一番落ち着く場所は？
+                                    </p>
+                                    <input type="text" id="q1" placeholder="(例) 友達と行く居酒屋">
+                                </p>
+                                <p class="text" id="q-text2">
+                                    <p>
+                                        Q.2最近、心に残った出来事は？
+                                    </p>
+                                    <input type="text" id="q2" placeholder="(例) 10円玉拾った">
+                                </p>
+                                <p class="text" id="q-text3">
+                                    <p>
+                                        Q.3あなたが大切にしている言葉は？
+                                    </p>
+                                    <input type="text" id="q3" placeholder="(例) 相手の立場になって考えよう">
+                                </p>
+                                <p class="text" id="q-text4">
+                                    <p>
+                                        Q.4あなたの好きな季節は？
+                                    </p>
+                                    <input type="text" id="q4" placeholder="(例) 春">
+                                </p>
+                                <p class="text" id="q-text5">
+                                    <p>
+                                        Q.5「愛」と聞いて思い浮かべるものは？
+                                    </p>
+                                    <input type="text" id="q5" placeholder="(例) ハート">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="answer-btn">
+                            <button id="a-btn" type="button">回答</button>
+                        </div>
+                    </li>
+                    <li class="item story-area" id="item2">
+                        <div class="text-area">
+                            <div class="content" id="p1">
+                                <p class="text" id="text1">むかしむかし、竹取のおじいさんとおばあさんがいました。</p>
+                            </div>
+                            <div class="content" id="p2">
+                                <p class="text" id="text2">ある日、おじいさんが竹を切ると、中から光り輝く竹がありました。</p>
+                            </div>
+                            <div class="content" id="p3">
+                                <p class="text" id="text3">竹の中には、小さな女の子が座っていました。おじいさんは驚きながらも家に連れて帰りました。</p>
+                            </div>
+                            <div class="content" id="p4">
+                                <p class="text" id="text4">おばあさんはその子を大切に育て、ふたりはまるで孫ができたように幸せに暮らしました。</p>
+                            </div>
+                            <div class="content" id="p5">
+                                <p class="text" id="text5">おじいさんは、姫が笑うたびに「{{Q1}}のように心が安らぐ」と感じていました。</p>
+                            </div>
+                            <div class="content" id="p6">
+                                <p class="text" id="text6">やがて少女は美しく成長し、世にも名高い「かぐや姫」と呼ばれるようになりました。</p>
+                            </div>
+                            <div class="content" id="p7">
+                                <p class="text" id="text7">多くの貴族が求婚に訪れましたが、かぐや姫はどの願いにも首を縦に振りませんでした。</p>
+                            </div>
+                            <div class="content" id="p8">
+                                <p class="text" id="text8">「私は、{{Q3}}という言葉を胸に生きているのです。」そう語る姫の瞳は、どこか遠い月を見つめていました。</p>
+                            </div>
+                            <div class="content" id="p9">
+                                <p class="text" id="text9">ある晩、かぐや姫は月を見上げて静かに涙を流しました。「最近、{{Q2}}ことがあって…心が揺れてしまうのです。」</p>
+                            </div>
+                            <div class="content" id="p10">
+                                <p class="text" id="text10">おじいさんとおばあさんはそっと寄り添い、「わしらがそばにおるぞ」と優しく声をかけました。</p>
+                            </div>
+                            <div class="content" id="p11">
+                                <p class="text" id="text11">やがて、月からの使者が迎えに来る夜が訪れました。その夜は、{{Q4}}のような穏やかな光が世界を包んでいました。</p>
+                            </div>
+                            <div class="content" id="p12">
+                                <p class="text" id="text12">かぐや姫は最後に手紙を残しました。「私にとっての愛は、{{Q5}}でした。どうか、忘れないでください。」</p>
+                            </div>
+                            <div class="content" id="p13">
+                                <p class="text" id="text13">光の中に包まれながら、姫は静かに月へと昇っていきました。</p>
+                            </div>
+                            <div class="content" id="p14">
+                                <p class="text" id="text14">おじいさんとおばあさんは涙をぬぐい、夜空を見上げながらそっとつぶやきました。「あの子の幸せを、ずっと祈っておるよ。」</p>
+                            </div>
+                            <div class="content" id="p15">
+                                <p class="text" id="text15">――月の光が竹林を照らし、風は優しく揺れていました。</p>
+                            </div>
+                            <div class="content" id="p16">
+                                <p class="text" id="text16">――めでたし、めでたし。</p>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="item picture-area" id="item3">
+                        <div class="picture">
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </main>    
+
+</body>
+
+</html>

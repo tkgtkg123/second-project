@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="/リセットCSS/reset.css">
+    <link rel="stylesheet" href="/style-header.css">
+    <link rel="stylesheet" href="/むかしむかしばなし/styles/urashima-story.css">
+    <title>浦島太郎3</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="header">
+                <div class="logo-area">
+                    <img class="logo" src="/ロゴ/logo2.png" alt="logo">
+                </div>
+                <div class="button-area">
+                    <a class="btn story" href="/むかしむかしばなし/html/index.html">ストーリー</a>
+                    <a class="btn home" href="/index.html">ホーム</a>
+                    <a class="btn logout" href="/ログインページ/index.html">ログアウト</a>
+                </div>
+            </div>
+            <div class="content-area">
+                <ul class="content-list">
+                    <li class="item picture-area" id="item1">
+                        <div class="picture">
+                        </div>
+                    </li>
+                    <li class="item qestion-area" id="item1.5">
+                        <div class="text-area">
+                            <div class="content qestion-content">
+                                <p class="text" id="q-text1">
+                                    <p>
+                                        Q1.今の気分を一言で言うと？
+                                    </p>
+                                    <input type="text" id="q1" placeholder="(例) めんどう、疲れた">
+                                </p>
+                                <p class="text" id="q-text2">
+                                    <p>
+                                        Q.2最近ハマっていることは？
+                                    </p>
+                                    <input type="text" id="q2" placeholder="(例) ゲーム">
+                                </p>
+                                <p class="text" id="q-text3">
+                                    <p>
+                                        Q.3理想の休日の過ごし方は？
+                                    </p>
+                                    <input type="text" id="q3" placeholder="(例) ゲーム">
+                                </p>
+                                <p class="text" id="q-text4">
+                                    <p>
+                                        Q.4自分を動物にたとえるなら？
+                                    </p>
+                                    <input type="text" id="q4" placeholder="(例) カメ>
+                                </p>
+                                <p class="text" id="q-text5">
+                                    <p>
+                                        Q.5南国にバカンスに行けると言われたら、まず何を持って行く？
+                                    </p>
+                                    <input type="text" id="q5" placeholder="(例) 歯ブラシ">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="answer-btn">
+                            <button id="a-btn" type="button">回答</button>
+                        </div>
+                    </li>
+                    <li class="item story-area" id="item2">
+                        <div class="text-area">
+                            <div class="content" id="p1">
+                                <p class="text" id="text1">むかしむかし、海辺の小さな村に、引きこもりの浦島太郎がいました。</p>
+                            </div>
+                            <div class="content" id="p2">
+                                <p class="text" id="text2">太郎は「{{Q1}}な気分だから今日は外出無理」と言いながら、一日中{{Q2}}をして過ごしていました。</p>
+                            </div>
+                            <div class="content" id="p3">
+                                <p class="text" id="text3">そのころ浜辺では、子どもたちが亀をいじめていました。</p>
+                            </div>
+                            <div class="content" id="p4">
+                                <p class="text" id="text4">しかし太郎は窓から見てつぶやきました。「うーん…誰か助けてくれるでしょ。」</p>
+                            </div>
+                            <div class="content" id="p5">
+                                <p class="text" id="text5">見かねたおじいさんとおばあさんが現れ、「もう私らが行こうか」と言って亀を助けました。</p>
+                            </div>
+                            <div class="content" id="p6">
+                                <p class="text" id="text6">数日後、助けられた亀が二人の前に現れ、「お礼に竜宮城へどうぞ！」と誘いました。</p>
+                            </div>
+                            <div class="content" id="p7">
+                                <p class="text" id="text7">おじいさんとおばあさんは、「{{Q3}}の予定だったけどまぁいいか」と言いながら乗り込みました。</p>
+                            </div>
+                            <div class="content" id="p8">
+                                <p class="text" id="text8">竜宮城では乙姫が大歓迎！　二人は{{Q4}}のように踊りまくり、宴を楽しみました。</p>
+                            </div>
+                            <div class="content" id="p9">
+                                <p class="text" id="text9">乙姫は別れ際、「これは玉手箱です。決して開けてはいけません」と言って{{Q5}}と一緒に手渡しました。</p>
+                            </div>
+                            <div class="content" id="p10">
+                                <p class="text" id="text10">二人が村へ戻ると、太郎はまだ布団の中。「あれ、外うるさいな…？」</p>
+                            </div>
+                            <div class="content" id="p11">
+                                <p class="text" id="text11">おばあさんが玉手箱を開けると、煙の中から太郎が現れ、「Wi-Fiある？」と聞きました。</p>
+                            </div>
+                            <div class="content" id="p12">
+                                <p class="text" id="text12">おじいさんは笑って言いました。「まぁ、現実にも竜宮城にも、結局は人が大事じゃな。」</p>
+                            </div>
+                            <div class="content" id="p13">
+                                <p class="text" id="text13">――めでたし、めでたし。</p>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="item picture-area" id="item3">
+                        <div class="picture">
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </main>    
+
+</body>
+
+</html>
