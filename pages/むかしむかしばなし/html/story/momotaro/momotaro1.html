@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="/リセットCSS/reset.css">
-    <link rel="stylesheet" href="/style-header.css">
-    <link rel="stylesheet" href="/むかしむかしばなし/styles/momotaro-story.css">
+    <link rel="stylesheet" href="/common/css/reset.css">
+    <link rel="stylesheet" href="/common/css/style-header.css">
+    <link rel="stylesheet" href="/pages/むかしむかしばなし/css/momotaro/momotaro-story.css">
     <title>桃太郎1</title>
 </head>
-<body>
+<body class="body" id="body">
     <main>
         <div class="container">
             <div class="header">
                 <div class="logo-area">
-                    <img class="logo" src="/ロゴ/logo2.png" alt="logo">
+                    <img class="logo" src="/image/logo2.png" alt="logo">
                 </div>
                 <div class="button-area">
                     <a class="btn story" href="/むかしむかしばなし/html/index.html">ストーリー</a>
@@ -25,59 +25,63 @@
                 <ul class="content-list">
                     <li class="item picture-area" id="item1">
                         <div class="picture">
+                            <img class="img" id="inu" src="/image/inu.png" alt="">
+                            <img class="img" id="momotaro" src="/image/momo-taro.png" alt="">
+                            <img class="img" id="oji-oba" src="/image/ojisan-obasan.png" alt="">
+                            
                         </div>
                     </li>
                     <li class="item qestion-area" id="item1.5">
                         <div class="text-area">
                             <div class="content qestion-content">
-                                <p class="text" id="q-text1">
-                                    <p>
-                                        Q1.あなたの好きな色は？
+                                <div class="q-text">
+                                    <p class="text" id="q-text1">
+                                        Q1. あなたの好きな色は？
                                     </p>
-                                    <input type="text" id="q1" placeholder="(例) 桃色">
-                                </p>
-                                <p class="text" id="q-text2">
-                                    <p>
-                                        Q.2あなたの好きな食べ物は？
+                                    <input class="input-text" type="text" id="q1" placeholder="(例) 桃色">
+                                </div>
+                                <div class="q-text">
+                                    <p class="text" id="q-text2">
+                                        Q.2 あなたの好きな食べ物は？
                                     </p>
-                                    <input type="text" id="q2" placeholder="(例) きびだんご">
-                                </p>
-                                <p class="text" id="q-text3">
-                                    <p>
-                                        Q.3あなたの座右の銘は？
+                                    <input class="input-text" type="text" id="q2" placeholder="(例) きびだんご">
+                                </div>
+                                <div class="q-text">
+                                    <p class="text" id="q-text3">
+                                        Q.3 あなたの座右の銘は？
                                     </p>
-                                    <input type="text" id="q3" placeholder="(例) 鬼に金棒">
-                                </p>
-                                <p class="text" id="q-text4">
-                                    <p>
-                                        Q.4あなたの口癖は
+                                    <input class="input-text" type="text" id="q3" placeholder="(例) 鬼に金棒">
+                                </div>
+                                <div class="q-text">
+                                    <p class="text" id="q-text4">
+                                        Q.4 あなたの口癖は
                                     </p>
-                                    <input type="text" id="q4" placeholder="(例) 肉食いて～">
-                                </p>
-                                <p class="text" id="q-text5">
-                                    <p>
-                                        Q.5友達が落ち込んでいる時にかける言葉は？（元気をなってほしい時にかける言葉は？）
+                                    <input class="input-text" type="text" id="q4" placeholder="(例) 肉食いて～">
+                                </div>
+                                <div class="q-text">
+                                    <p class="text" id="q-text5">
+                                        Q.5 友達が落ち込んでいる時にかける言葉は？（元気をなってほしい時にかける言葉は？）
                                     </p>
-                                    <input type="text" id="q5" placeholder="(例) どうしたの？だいじょうぶ？">
-                                </p>
-                                <p class="text" id="q-text6">
-                                    <p>
-                                        Q.6自分を動物に例えるとしたら何？
+                                    <input class="input-text" type="text" id="q5" placeholder="(例) どうしたの？だいじょうぶ？">
+                                </div>
+                                <div class="q-text">
+                                    <p class="text" id="q-text6">
+                                        Q.6 自分を動物に例えるとしたら何？
                                     </p>
-                                    <input type="text" id="q6" placeholder="(例) 熊">
-                                </p>
-                                <p class="text" id="q-text7">
-                                    <p>
-                                        Q.7旅行に行くとしたらどこがいいですか？ or あなたの好きな場所はどこですか？
+                                    <input class="input-text" type="text" id="q6" placeholder="(例) 熊">
+                                </div>
+                                <div class="q-text">
+                                    <p class="text" id="q-text7">
+                                        Q.7 旅行に行くとしたらどこがいいですか？ or あなたの好きな場所はどこですか？
                                     </p>
-                                    <input type="text" id="q7" placeholder="(例) 新潟">
-                                </p>
-                                <p class="text" id="q-text8">
-                                    <p>
-                                        Q.8あなたの苦手なもの or ことは何ですか？
+                                    <input class="input-text" type="text" id="q7" placeholder="(例) 新潟">
+                                </div>
+                                <div class="q-text">
+                                    <p class="text" id="q-text8">
+                                        Q.8 あなたの苦手なもの or ことは何ですか？
                                     </p>
-                                    <input type="text" id="q8" placeholder="(例) ピーマン">
-                                </p>
+                                    <input class="input-text" type="text" id="q8" placeholder="(例) ピーマン">
+                                </div>
                             </div>
                         </div>
                         <div class="answer-btn">
@@ -88,6 +92,9 @@
                     </li>
                     <li class="item picture-area" id="item3">
                         <div class="picture">
+                            <img class="img" id="kiji" src="/image/kiji.png" alt="">
+                            <img class="img" id="saru" src="/image/saru.png" alt="">
+                            <img class="img" id="oni" src="/image/oni.png" alt="">
                         </div>
                     </li>
                 </ul>
@@ -115,7 +122,7 @@
         </h2> -->
 
     </main>    
-    <script src="/むかしむかしばなし/script/main_momotaro1.js"></script>
+    <script src="/pages/むかしむかしばなし/js/momotaro/main_momotaro1.js"></script>
 </body>
 
 </html>

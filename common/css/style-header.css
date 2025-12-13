@@ -12,9 +12,9 @@
 }
 .header .logo-area .logo {
   border: 2px solid black;
-  height: 51px;
-  width: 71px;
-  margin: 5px 0 5px 40px;
+  height: 80%;
+  width: 4rem;
+  margin: 5px 0 5px 20%;
 }
 .header .logo-area .logo:hover {
   cursor: pointer;

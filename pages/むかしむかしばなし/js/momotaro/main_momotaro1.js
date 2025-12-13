@@ -7,10 +7,9 @@ const momotaro_story1 = () => {
     const q6 = document.getElementById("q6").value || "熊";
     const q7 = document.getElementById("q7").value || "新潟";
     const q8 = document.getElementById("q8").value || "ピーマン";
-
     const q_area = document.getElementById("item1.5");
-
     const story_area = document.getElementById("item2");
+    const img_allay = ["inu", "momotaro", "oji-oba", "kiji", "saru", "oni"]; 
 
     const make_story = `
         <div class="text-area">
