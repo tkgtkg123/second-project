@@ -41,6 +41,11 @@ body .content-area .content-list .item .answer-btn #a-btn {
   font-size: 1.4rem;
   border-radius: 15px;
 }
+body .content-area .content-list .item .answer-btn #a-btn:hover {
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
 body .content-area .content-list .story-area {
   display: none;
 }
@@ -57,17 +62,41 @@ body .content-area .content-list .picture-area .picture {
 body .content-area .content-list .picture-area .picture .img {
   height: 15vh;
   width: 15vh;
+  animation: Rotate 3s ease-in-out infinite, MoveSmallLeft 1s ease-in-out forwards;
+}
+body .content-area .content-list .picture-area .picture .PushBtn-img {
+  height: 35vh;
+  width: 35vh;
   animation: Rotate 3s ease-in-out infinite;
 }
 
 @keyframes Rotate {
   0% {
-    transform: rotate(30deg);
+    transform: rotate(90deg);
   }
   50% {
     transform: rotate(-30deg);
   }
   100% {
-    transform: rotate(30deg);
+    transform: rotate(90deg);
+  }
+}
+@keyframes MoveSmallLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-10vw);
+  }
+}
+@keyframes MoveLeft {
+  0% {
+    transform: translateX(-10vw);
+  }
+  50% {
+    transform: translateX(-55vw);
+  }
+  100% {
+    transform: translateX(-10vw);
   }
 }/*# sourceMappingURL=momotaro-story.css.map */
