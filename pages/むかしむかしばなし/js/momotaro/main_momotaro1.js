@@ -10,7 +10,6 @@ const momotaro_story1 = () => {
     const q_area = document.getElementById("item1.5");
     const story_area = document.getElementById("item2");
     const img_allay = ["inu", "momotaro", "oji-oba", "kiji", "saru", "oni"]; 
-
     const make_story = `
         <div class="text-area">
         <div class="content" id="p1"> 
@@ -70,9 +69,7 @@ const momotaro_story1 = () => {
         </div>
         </div>
     `;
-
     q_area.style.display = "none";
-
     story_area.innerHTML = make_story;
     story_area.style.display = "block";
     
@@ -80,5 +77,5 @@ const momotaro_story1 = () => {
 
 const answer_btn = document.getElementById("a-btn");
 answer_btn.addEventListener("click", () => {
-    momotaro_story1();
+    momotaro_story();
 });

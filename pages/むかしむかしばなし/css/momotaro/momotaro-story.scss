@@ -65,17 +65,22 @@ body {
         // background-color: blue;
         width: 15vw;
 
+        & .slide {
+          transform-origin: center;
+          animation: slide 5s ease-in-out ;
+        }
+
         & .picture {
           display: flex;
           flex-direction: column;
           justify-content: space-around;
+          transform-origin: center;
+          animation: slideLeft 5s ease-in-out infinite;
 
           & .img {
             height: 15vh;
             width: 15vh;
-            animation: Rotate 3s ease-in-out infinite,
-            MoveSmallLeft 1s ease-in-out forwards,
-            // MoveLeft 5s ease-in-out 0.9s infinite;
+            animation: rotate2 1.5s ease-in-out infinite,
           }
 
           & .PushBtn-img {
@@ -89,25 +94,33 @@ body {
   }
 }
 
-@keyframes Rotate {
-  0% {transform: rotate(90deg);}
+@keyframes rotate {
+  0% {transform: rotate(30deg);}
   50% {transform: rotate(-30deg);}
-  100% {transform: rotate(90deg);}
+  100% {transform: rotate(30deg);}
 }
 
-@keyframes MoveSmallLeft {
-  from {transform: translateX(0);}
-  to {transform: translateX(-10vw);}
+@keyframes rotate2 {
+  0% {transform: rotate(30deg) scale(2);}
+  50% {transform: rotate(-30deg) scale(2);}
+  100% {transform: rotate(30deg) scale(2);}
 }
 
-@keyframes MoveLeft {
+@keyframes slideLeft {
   0% {
-    transform:translateX(-10vw);
+    transform: translate(0);
   }
   50% {
-    transform:translateX(-55vw);
+    transform: translateX(-50vw);
+  }
+  55% {
+    transform: translateX(-50vw) scaleX(-1);
+  }
+  95% {
+    transform: translateX(-2vw) scaleX(-1);
   }
   100% {
-    transform:translateX(-10vw);
+    transform: translateX(0);
   }
 }
+
