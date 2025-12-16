@@ -13,6 +13,12 @@ body .content-area .content-list {
   margin: 0;
   padding: 0;
 }
+body .content-area .content-list .vanish {
+  animation: vanish 4s ease-in 1s;
+}
+body .content-area .content-list .appear {
+  animation: appear 3s ease-out 2s;
+}
 body .content-area .content-list .item {
   margin: 30px 0 0 0;
   width: 50vw;
@@ -54,26 +60,28 @@ body .content-area .content-list .picture-area {
   justify-content: center;
   width: 15vw;
 }
-body .content-area .content-list .picture-area .slide {
+body .content-area .content-list .picture-area .slideLeft {
   transform-origin: center;
-  animation: slide 5s ease-in-out;
+  animation: slideLeft 5s ease-in-out;
+}
+body .content-area .content-list .picture-area .slideRight {
+  transform-origin: center;
+  animation: slideRight 5s ease-in-out;
 }
 body .content-area .content-list .picture-area .picture {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  transform-origin: center;
-  animation: slideLeft 5s ease-in-out infinite;
 }
 body .content-area .content-list .picture-area .picture .img {
   height: 15vh;
   width: 15vh;
-  animation: rotate2 1.5s ease-in-out infinite;
+  animation: rotate 3s ease-in-out infinite;
 }
-body .content-area .content-list .picture-area .picture .PushBtn-img {
-  height: 35vh;
-  width: 35vh;
-  animation: Rotate 3s ease-in-out infinite;
+body .content-area .content-list .picture-area .picture .rotate2 {
+  height: 20vh;
+  width: 20vw;
+  animation: rotate2 1.5s ease-in-out;
 }
 
 @keyframes rotate {
@@ -89,7 +97,7 @@ body .content-area .content-list .picture-area .picture .PushBtn-img {
 }
 @keyframes rotate2 {
   0% {
-    transform: rotate(30deg) scale(2);
+    transform: rotate(30deg) scale(1.5);
   }
   50% {
     transform: rotate(-30deg) scale(2);
@@ -113,5 +121,38 @@ body .content-area .content-list .picture-area .picture .PushBtn-img {
   }
   100% {
     transform: translateX(0);
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateX(50vw);
+  }
+  55% {
+    transform: translateX(50vw) scaleX(-1);
+  }
+  95% {
+    transform: translateX(2vw) scaleX(-1);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes vanish {
+  from {
+    display: none;
+  }
+  to {
+    display: block;
+  }
+}
+@keyframes appear {
+  from {
+    display: block;
+  }
+  to {
+    display: none;
   }
 }/*# sourceMappingURL=momotaro-story.css.map */

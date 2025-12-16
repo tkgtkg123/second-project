@@ -1,4 +1,4 @@
-const momotaro_story1 = () => {
+const momotaro_story = () => {
     const q1 = document.getElementById("q1").value || "桃色";
     const q2 = document.getElementById("q2").value || "きびだんご";
     const q3 = document.getElementById("q3").value || "鬼に金棒";
@@ -75,7 +75,21 @@ const momotaro_story1 = () => {
     
 };
 
+const pushBtn = () => {
+    const leftImg = document.getElementById("LeftImg");
+    const RightImg = document.getElementById("RightImg");
+    const imgs = document.querySelectorAll(".img");
+    imgs.forEach(img => {
+        img.classList.add("test");
+    });
+    // console.log("test");
+
+    
+}
+
 const answer_btn = document.getElementById("a-btn");
 answer_btn.addEventListener("click", () => {
-    momotaro_story();
+    // momotaro_story();
+    pushBtn();
+
 });
