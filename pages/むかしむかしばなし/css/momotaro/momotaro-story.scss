@@ -16,11 +16,11 @@ body {
       padding: 0;  
 
       & .vanish {
-        animation: vanish 4s ease-in 1s ;
+        animation: vanish 1s ease-in 1s ;
       }
 
       & .appear {
-        animation: appear 3s ease-out 2s ;
+        animation: appear 2s ease-out 2s ;
       }
 
       & .item {
@@ -57,7 +57,6 @@ body {
 
             &:hover {
               cursor: pointer;
-              color: red;
               font-weight: bold;
             }
           }
@@ -65,7 +64,10 @@ body {
         }
       }
 
-      & .story-area {display: none;}
+      & .story-area {
+        display: none;
+        opacity: 0;
+      }
 
       & .picture-area {
         display: flex;
@@ -86,6 +88,7 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: space-around;
+          z-index: 10;
 
           & .img {
             height: 15vh;
@@ -96,7 +99,7 @@ body {
           & .rotate2 {
             height:20vh;
             width: 20vw;
-            animation: rotate2 1.5s ease-in-out;
+            animation: rotate2 3s ease-in-out infinite;
           }
         }
       }  
@@ -111,7 +114,7 @@ body {
 }
 
 @keyframes rotate2 {
-  0% {transform: rotate(30deg) scale(1.5);}
+  0% {transform: rotate(30deg) scale(2);}
   50% {transform: rotate(-30deg) scale(2);}
   100% {transform: rotate(30deg) scale(2);}
 }
@@ -133,11 +136,11 @@ body {
 }
 
 @keyframes vanish {
-  from {display: none;}
-  to {display: block;}
+  from {opacity: 1;}
+  to {opacity: 0;}
 }
 
 @keyframes appear {
-  from {display: block;}
-  to {display: none;}
+  from {opacity: 0;}
+  to {opacity: 1;}
 }

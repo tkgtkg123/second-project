@@ -1,4 +1,4 @@
-const momotaro_story = () => {
+const makeStory = () => {
     const q1 = document.getElementById("q1").value || "桃色";
     const q2 = document.getElementById("q2").value || "きびだんご";
     const q3 = document.getElementById("q3").value || "鬼に金棒";
@@ -7,10 +7,8 @@ const momotaro_story = () => {
     const q6 = document.getElementById("q6").value || "熊";
     const q7 = document.getElementById("q7").value || "新潟";
     const q8 = document.getElementById("q8").value || "ピーマン";
-    const q_area = document.getElementById("item1.5");
     const story_area = document.getElementById("item2");
-    const img_allay = ["inu", "momotaro", "oji-oba", "kiji", "saru", "oni"]; 
-    const make_story = `
+    const storyText = `
         <div class="text-area">
         <div class="content" id="p1"> 
             <p class="text" id="text1">むかしむかし、川で洗濯をしていたおばあさんの前に、大きな桃が流れてきました。</p> 
@@ -69,27 +67,44 @@ const momotaro_story = () => {
         </div>
         </div>
     `;
-    q_area.style.display = "none";
-    story_area.innerHTML = make_story;
-    story_area.style.display = "block";
+    story_area.innerHTML = storyText;
     
 };
 
-const pushBtn = () => {
+
+const changePage = () => {
+    const q_area = document.getElementById("item1.5");
+    const story_area = document.getElementById("item2");
+    q_area.classList.add("vanish");
+    setTimeout(() =>{
+        q_area.style.display = "none";
+        story_area.style.display = "block";
+        story_area.classList.add("appear");
+    }, 2000);
+    // setTimeout(() => {
+    // },)
+}
+
+const slideImg = () => {
     const leftImg = document.getElementById("LeftImg");
     const RightImg = document.getElementById("RightImg");
     const imgs = document.querySelectorAll(".img");
     imgs.forEach(img => {
-        img.classList.add("test");
+        img.classList.add("rotate2");
     });
+    leftImg.classList.add("slideRight");
+    RightImg.classList.add("slideLeft");
     // console.log("test");
-
-    
+    setTimeout(() => {
+        imgs.forEach(img => {
+            img.classList.remove("rotate2")
+        })
+    }, 6000);
 }
 
 const answer_btn = document.getElementById("a-btn");
 answer_btn.addEventListener("click", () => {
-    // momotaro_story();
-    pushBtn();
-
+    makeStory();
+    changePage();
+    slideImg();
 });
