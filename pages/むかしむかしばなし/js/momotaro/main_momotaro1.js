@@ -99,7 +99,7 @@ const slideImg = () => {
         imgs.forEach(img => {
             img.classList.remove("rotate2")
         })
-    }, 6000);
+    }, 7000);
 }
 
 const answer_btn = document.getElementById("a-btn");

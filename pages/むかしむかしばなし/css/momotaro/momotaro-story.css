@@ -17,7 +17,7 @@ body .content-area .content-list .vanish {
   animation: vanish 1s ease-in 1s;
 }
 body .content-area .content-list .appear {
-  animation: appear 2s ease-out 2s;
+  animation: appear 4s ease-out 2s forwards;
 }
 body .content-area .content-list .item {
   margin: 30px 0 0 0;
@@ -62,11 +62,11 @@ body .content-area .content-list .picture-area {
 }
 body .content-area .content-list .picture-area .slideLeft {
   transform-origin: center;
-  animation: slideLeft 5s ease-in-out;
+  animation: slideLeft 5s ease-in-out 1s;
 }
 body .content-area .content-list .picture-area .slideRight {
   transform-origin: center;
-  animation: slideRight 5s ease-in-out;
+  animation: slideRight 5s ease-in-out 1s;
 }
 body .content-area .content-list .picture-area .picture {
   display: flex;
@@ -80,9 +80,7 @@ body .content-area .content-list .picture-area .picture .img {
   animation: rotate 3s ease-in-out infinite;
 }
 body .content-area .content-list .picture-area .picture .rotate2 {
-  height: 20vh;
-  width: 20vw;
-  animation: rotate2 3s ease-in-out infinite;
+  animation: toBig 1s ease-in-out forwards, rotate2 3s ease-in-out 1s infinite, toSmall 1s ease-in-out 6s forwards;
 }
 
 @keyframes rotate {
@@ -139,6 +137,22 @@ body .content-area .content-list .picture-area .picture .rotate2 {
   }
   100% {
     transform: translateX(0);
+  }
+}
+@keyframes toBig {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@keyframes toSmall {
+  from {
+    transform: scale(2);
+  }
+  to {
+    transform: scale(1);
   }
 }
 @keyframes vanish {

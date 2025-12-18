@@ -20,7 +20,7 @@ body {
       }
 
       & .appear {
-        animation: appear 2s ease-out 2s ;
+        animation: appear 4s ease-out 2s forwards;
       }
 
       & .item {
@@ -77,11 +77,12 @@ body {
 
         & .slideLeft {
           transform-origin: center;
-          animation: slideLeft 5s ease-in-out;
+          animation: slideLeft 5s ease-in-out 1s;
         }
+
         & .slideRight {
           transform-origin: center;
-          animation: slideRight 5s ease-in-out;
+          animation: slideRight 5s ease-in-out 1s;
         }
 
         & .picture {
@@ -97,9 +98,11 @@ body {
           }
 
           & .rotate2 {
-            height:20vh;
-            width: 20vw;
-            animation: rotate2 3s ease-in-out infinite;
+            animation: 
+              toBig 1s ease-in-out forwards,
+              rotate2 3s ease-in-out 1s infinite,
+              toSmall 1s ease-in-out 6s forwards
+            ;
           }
         }
       }  
@@ -133,6 +136,16 @@ body {
   55% {transform: translateX(50vw) scaleX(-1);}
   95% {transform: translateX(2vw) scaleX(-1);}
   100% {transform: translateX(0);}
+}
+
+@keyframes toBig {
+  from {transform: scale(1);}
+  to {transform: scale(2);}
+}
+
+@keyframes toSmall {
+  from {transform: scale(2);}
+  to {transform: scale(1);}
 }
 
 @keyframes vanish {
