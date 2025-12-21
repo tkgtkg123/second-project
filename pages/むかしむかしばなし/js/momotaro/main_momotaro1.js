@@ -1,3 +1,18 @@
+const randomColor = () => {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    const bolds = document.querySelectorAll(".bold");
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
+const changeFontColor = () => {
+    const bolds = document.querySelectorAll(".bold");
+    bolds.forEach(bold => {
+        bold.style.color = randomColor();
+    })
+}
+
 const makeStory = () => {
     const q1 = document.getElementById("q1").value || "桃色";
     const q2 = document.getElementById("q2").value || "きびだんご";
@@ -16,29 +31,29 @@ const makeStory = () => {
 
         <div class="content" id="p2"> 
             <p class="text" id="text2">
-                桃を割ると、中から髪が<strong>${q1}</strong>の赤ん坊が現れました。<br>
+                桃を割ると、中から髪が<span class="bold q1-answer">${q1}</span>の赤ん坊が現れました。<br>
                 おじいさんとおばあさんは桃から生まれた赤ん坊に桃太郎と名付けました。
             </p> 
         </div>
 
         <div class="content" id="p3"> 
-            <p class="text" id="text3">おじいさんとおばあさんの家の家訓は「<strong>${q3}</strong>」。</p> 
+            <p class="text" id="text3">おじいさんとおばあさんの家の家訓は「<span class="bold q3-answer">${q3}</span>」。</p> 
         </div>
 
         <div class="content" id="p4"> 
-            <p class="text" id="text4">その教えを胸に、桃太郎は<strong>${q7}</strong>に住む鬼を退治しに出発しました。</p> 
+            <p class="text" id="text4">その教えを胸に、桃太郎は<span class="bold q7-answer">${q7}</span>に住む鬼を退治しに出発しました。</p> 
         </div>
 
         <div class="content" id="p5"> 
-            <p class="text" id="text5">道中、仲間にしたのは<strong>${q6}</strong>たち。</p> 
+            <p class="text" id="text5">道中、仲間にしたのは<span  class="bold q6-answer">${q6}</span>たち。</p> 
         </div>
 
         <div class="content" id="p6"> 
-            <p class="text" id="text6">彼らの掛け声は「<strong>${q4}</strong>!!」</p> 
+            <p class="text" id="text6">彼らの掛け声は「<span  class="bold q4-answer">${q4}</span>!!」</p> 
         </div>
 
         <div class="content" id="p7"> 
-            <p class="text" id="text7">鬼ヶ島（<strong>${q7}</strong>）では、鬼たちが<strong>${q2}</strong>を食べて宴会中。</p> 
+            <p class="text" id="text7">鬼ヶ島（<span class="bold q7-answer">${q7}</span>）では、鬼たちが<span class="bold q2-answer">${q2}</span>を食べて宴会中。</p> 
         </div>
 
         <div class="content" id="p8"> 
@@ -46,11 +61,11 @@ const makeStory = () => {
         </div>
 
         <div class="content" id="p9"> 
-            <p class="text" id="text9">なぜなら鬼の弱点は<strong>${q8}</strong>であり、桃太郎達は<strong>${q8}</strong>を身に着けていたのです。</p> 
+            <p class="text" id="text9">なぜなら鬼の弱点は<span class="bold q8-answer">${q8}</span>であり、桃太郎達は<span class="bold q8-answer">${q8}</span>を身に着けていたのです。</p> 
         </div>
 
         <div class="content" id="p10"> 
-            <p class="text" id="text10">鬼たちは降参し、宝物と残りの<strong>${q2}</strong>を差し出しました。</p> 
+            <p class="text" id="text10">鬼たちは降参し、宝物と残りの<span class="bold q2-answer">${q2}</span>を差し出しました。</p> 
         </div>
 
         <div class="content" id="p11"> 
@@ -58,17 +73,17 @@ const makeStory = () => {
         </div>
 
         <div class="content" id="p12"> 
-            <p class="text" id="text12">「<strong>${q4}」</strong></p> 
+            <p class="text" id="text12">「<span class="bold q4-answer">${q4}」</span></p> 
         </div>
 
         <div class="content" id="p13"> 
             <p>　</p>
-            <p class="text" id="text13">おしまい</strong></p> 
+            <p class="text" id="text13">おしまい</p> 
         </div>
         </div>
     `;
     story_area.innerHTML = storyText;
-    
+    changeFontColor();
 };
 
 
@@ -94,7 +109,6 @@ const slideImg = () => {
     });
     leftImg.classList.add("slideRight");
     RightImg.classList.add("slideLeft");
-    // console.log("test");
     setTimeout(() => {
         imgs.forEach(img => {
             img.classList.remove("rotate2")
@@ -107,4 +121,11 @@ answer_btn.addEventListener("click", () => {
     makeStory();
     changePage();
     slideImg();
+    
+    console.log("push btn");
 });
+
+// const bolds = document.querySelectorAll(".bold");
+// bolds.addEventListener("click", () => {
+//     changeFontColor();
+// });

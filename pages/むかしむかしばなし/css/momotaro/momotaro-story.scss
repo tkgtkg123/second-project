@@ -4,12 +4,10 @@ body {
   & .content-area{
     display: flex;
     justify-content: center;
-    // background-color: green;
     width: 100vw;
     padding: 0 0 100px 0;
   
     & .content-list {
-      // background-color: yellow;
       list-style-type: none;
       display: flex;
       margin: 0;
@@ -67,12 +65,21 @@ body {
       & .story-area {
         display: none;
         opacity: 0;
+
+        & .bold {
+          font-weight: bold;
+          text-decoration: underline;
+          // .boldの文字の色はJavaScriptで操作している(関数randomColo)
+          
+          &:hover {
+            cursor: pointer;
+          }
+        }
       }
 
       & .picture-area {
         display: flex;
         justify-content: center;
-        // background-color: blue;
         width: 15vw;
 
         & .slideLeft {

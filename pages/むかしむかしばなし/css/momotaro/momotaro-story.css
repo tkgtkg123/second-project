@@ -55,6 +55,13 @@ body .content-area .content-list .story-area {
   display: none;
   opacity: 0;
 }
+body .content-area .content-list .story-area .bold {
+  font-weight: bold;
+  text-decoration: underline;
+}
+body .content-area .content-list .story-area .bold:hover {
+  cursor: pointer;
+}
 body .content-area .content-list .picture-area {
   display: flex;
   justify-content: center;
