@@ -121,11 +121,19 @@ answer_btn.addEventListener("click", () => {
     makeStory();
     changePage();
     slideImg();
+    setTimeout(() => {
+        wordColor();
+    }, 7000);
     
     console.log("push btn");
 });
 
-// const bolds = document.querySelectorAll(".bold");
-// bolds.addEventListener("click", () => {
-//     changeFontColor();
-// });
+
+const wordColor = () => {
+    const bolds = document.querySelectorAll(".bold");
+    bolds.forEach(bold => {
+        bold.addEventListener("click",() => {
+            changeFontColor();
+        } );
+    });
+};
