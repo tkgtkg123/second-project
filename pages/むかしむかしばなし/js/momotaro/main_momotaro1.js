@@ -116,6 +116,15 @@ const slideImg = () => {
     }, 7000);
 }
 
+const wordColor = () => {
+    const bolds = document.querySelectorAll(".bold");
+    bolds.forEach(bold => {
+        bold.addEventListener("click",() => {
+            changeFontColor();
+        } );
+    });
+};
+
 const answer_btn = document.getElementById("a-btn");
 answer_btn.addEventListener("click", () => {
     makeStory();
@@ -128,12 +137,3 @@ answer_btn.addEventListener("click", () => {
     console.log("push btn");
 });
 
-
-const wordColor = () => {
-    const bolds = document.querySelectorAll(".bold");
-    bolds.forEach(bold => {
-        bold.addEventListener("click",() => {
-            changeFontColor();
-        } );
-    });
-};
