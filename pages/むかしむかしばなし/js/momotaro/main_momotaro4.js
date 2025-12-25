@@ -1,14 +1,10 @@
 const makeStory = () => {
-    const q1 = document.getElementById("q1").value || "カレー";
-    const q2 = document.getElementById("q2").value || "赤";
-    const q3 = document.getElementById("q3").value || "キング";
-    const q4 = document.getElementById("q4").value || "スカイダイビング";
-    const q5 = document.getElementById("q5").value || "ハーブティー";
-    const q6 = document.getElementById("q6").value || "野球";
-    const q7 = document.getElementById("q7").value || "コーラ";
-    const q8 = document.getElementById("q8").value || "飲み行こう";
-    const q9 = document.getElementById("q9").value || "野球しようぜ！";
-    const q10 = document.getElementById("q10").value || "ミッキー";
+    const q1 = document.getElementById("q1").value || "桃";
+    const q2 = document.getElementById("q2").value || "チョリーーッス！これから始まるパーリィナイ";
+    const q3 = document.getElementById("q3").value;
+    const q4 = document.getElementById("q4").value || "将来の夢はユーチューバーになって芸能人と結婚して新婚旅行はガンダムに乗って宇宙に行きたい！";
+    const q4_word1 = document.getElementById("q4_word1");
+    const q4_word2 = document.getElementById("q4_word2");
     const answer = document.getElementsByClassName('bold');
     const q_area = document.getElementById("item1.5");
     const story_area = document.getElementById("item2");
@@ -21,25 +17,28 @@ const makeStory = () => {
                 <p class="text" id="text2"> おじいさんは山へ芝刈りに、おばあさんは川へ洗濯に行きました。 </p> 
             </div>
             <div class="content" id="p3"> 
-                <p class="text" id="text3"> すると、大きな桃がどんぶらこ、どんぶらこと流れてきました。 </p> 
+                <p class="text" id="text3"> すると、大きな<span class="bold q1-answer">${q1}</span>がどんぶらこ、どんぶらこと流れてきました。 </p> 
             </div>
             <div class="content" id="p4"> 
                 <p class="text" id="text4"> おばあさんが持ち帰って割ると、中から元気な赤ん坊が！ </p> 
             </div>
             <div class="content" id="p5"> 
-                <p class="text" id="text5"> 「まぁまぁ立派な子だこと！」と喜び、桃太郎と名づけました。 </p> 
+                <p class="text" id="text5"> 赤ん坊は生まれてすぐに「<span class="bold q1-answer">${q2}</span>！」と泣きました。<br>
+                    「まぁまぁ立派な子だこと！」と喜び、<span class="q1-answer">${q1}</span>太郎と名づけました。
+                </p> 
             </div>
             <div class="content" id="p6"> 
-                <p class="text" id="text6"> 桃太郎はすくすく育ちましたが、ちょっとマイペース。 </p> 
+                <p class="text" id="text6"> <span class="q1-answer">${q1}</span>太郎はすくすく育ちましたが、ちょっとマイペース。 </p> 
             </div>
             <div class="content" id="p7"> 
-                <p class="text" id="text7"> 「鬼退治？うーん、明日でいいかな」と言いながら昼寝ばかり。 </p> 
+                <p class="text" id="text7"> 「鬼退治？うーん、明日でいいかな」と言いながら昼寝ばかり。<br>
+                さらには、「そういえば昨日思いついたんだけど、俺、、、 <span class="bold q4-answer">${q4}</span>」と言っていたりもしました。 </p> 
             </div>
             <div class="content" id="p8"> 
                 <p class="text" id="text8"> 見かねたおじいさんとおばあさんは、顔を見合わせて言いました。 </p> 
             </div>
             <div class="content" id="p9"> 
-                <p class="text" id="text9"> 「……もう、わしらが行くか。」 </p> 
+                <p class="text" id="text9"> 「世も末じゃな……もう、わしらが行くか。」 </p> 
             </div>
             <div class="content" id="p10"> 
                 <p class="text" id="text10"> 翌朝、きびだんごをリュックに詰め、おばあさんは洗濯板を武器に、 </p> 
@@ -48,13 +47,13 @@ const makeStory = () => {
                 <p class="text" id="text11"> おじいさんは芝刈り鎌を片手に出発！ </p> 
             </div>
             <div class="content" id="p12"> 
-                <p class="text" id="text12"> 途中で犬・猿・キジが現れましたが、みんな桃太郎目当て。 </p> 
+                <p class="text" id="text12"> 途中で犬・猿・キジが現れましたが、みんな<span class="q1-answer">${q1}</span>太郎目当て。 </p> 
             </div>
             <div class="content" id="p13"> 
                 <p class="text" id="text13"> 「え、本人いないの！？」と驚くも、 </p> 
             </div>
             <div class="content" id="p14"> 
-                <p class="text" id="text14"> おばあさんの手料理のきびだんごに心を撃ち抜かれ、あっさり同行。 </p> 
+                <p class="text" id="text14"> おばあさんの手料理のきびだんごの美味しさに心を撃ち抜かれ、あっさり同行。 </p> 
             </div>
             <div class="content" id="p15"> 
                 <p class="text" id="text15"> 鬼ヶ島に着くと、鬼たちは酒盛りの真っ最中。 </p> 
