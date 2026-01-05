@@ -87,7 +87,7 @@ const makeStory = () => {
             </div>
             <div class="content" id="p15"> 
                 <p class="text" id="text15">
-                    鬼たちに教えていると、その中のひとり、瞳が澄んだ若い鬼は、まるで<span class="bold q11-answer">${q10}</span>のような姿をしていました。
+                    鬼たちに教えていると、その中のひとり、瞳が澄んだ若い鬼は、まるで<span class="bold q10-answer">${q10}</span>のような姿をしていました。
                 </p> 
             </div>
             <div class="content" id="p16"> 
@@ -97,12 +97,12 @@ const makeStory = () => {
             </div>
             <div class="content" id="p17"> 
                 <p class="text" id="text17">
-                    桃太郎がその鬼の名前を聞くと、「<span class="bold q11-answer">${q10}</span>」と答えました。
+                    桃太郎がその鬼の名前を聞くと、「<span class="bold q10-answer">${q10}</span>」と答えました。
                 </p> 
             </div>
             <div class="content" id="p18"> 
                 <p class="text" id="text18">
-                    桃太郎は<span class="bold q4-answer">${q4}</span>の手を取り、「<span class="bold q8-answer">${q8}</span>」と静かに告げました。
+                    桃太郎は<span class="bold q10-answer">${q10}</span>の手を取り、「<span class="bold q8-answer">${q8}</span>」と静かに告げました。
                 </p> 
             </div>
             <div class="content" id="p19"> 
@@ -112,7 +112,7 @@ const makeStory = () => {
             </div>
             <div class="content" id="p20"> 
                 <p class="text" id="text20">
-                    夜風の中、宴を抜け出した桃太郎と<span class="bold q11-answer">${q10}</span>は、遠く月を見上げながらそっと微笑みました。
+                    夜風の中、宴を抜け出した桃太郎と<span class="bold q10-answer">${q10}</span>は、遠く月を見上げながらそっと微笑みました。
                 </p> 
             </div>
             <div class="content" id="p21"> 
