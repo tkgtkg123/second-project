@@ -1,6 +1,6 @@
 const makeStory = () => {
     const q1 = document.getElementById("q1").value || "桃";
-    const q2 = document.getElementById("q2").value || "チョリーーッス！これから始まるパーリィナイ";
+    const q2 = document.getElementById("q2").value || "ぼくドラえもんー！";
     const q3 = document.getElementById("q3").value;
     const q4 = document.getElementById("q4").value || "将来の夢はユーチューバーになって芸能人と結婚して新婚旅行はガンダムに乗って宇宙に行きたい！";
     const q4_word1 = document.getElementById("q4_word1");
@@ -24,7 +24,7 @@ const makeStory = () => {
             </div>
             <div class="content" id="p5"> 
                 <p class="text" id="text5"> 赤ん坊は生まれてすぐに「<span class="bold q1-answer">${q2}</span>！」と泣きました。<br>
-                    「まぁまぁ立派な子だこと！」と喜び、<span class="q1-answer">${q1}</span>太郎と名づけました。
+                    「まぁまぁ立派な子だこと！」と喜び、<span class="q3-answer">${q3}</span>から<span class="q1-answer">${q1}</span>太郎と名づけました。
                 </p> 
             </div>
             <div class="content" id="p6"> 
