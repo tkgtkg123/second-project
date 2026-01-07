@@ -1,31 +1,5 @@
-.header {
-  background-color: rgb(255, 119, 0);
-  height: 4em;
-  width: 100vw;
-  display: flex;
-}
-.header .logo-area {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  justify-content: flex-start;
-}
-.header .logo-area .logo {
-  border: 2px solid black;
-  height: 51px;
-  width: 71px;
-  margin: 5px 0 5px 40px;
-}
-.header .logo-area .logo:hover {
-  cursor: pointer;
-}
-
-.space {
-  height: 20px;
-  width: 100vw;
-}
-
 .inform-area {
+  margin: 20px auto;
   height: 100vh;
   width: 100vw;
 }

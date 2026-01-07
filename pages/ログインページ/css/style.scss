@@ -1,40 +1,6 @@
-.header {
-  background-color: rgb(255, 119, 0);
-  height: 4em;
-  width: 100vw;
-  display: flex;
-
-  & .logo-area {
-    // background-color: purple;
-    height: 100%;
-    width: 50%;;
-    display: flex;
-    justify-content: flex-start;
-
-    & .logo {
-      // background-color: white;
-      border: 2px solid black;
-      height: 51px;
-      width: 71px;
-      // height: 80%;
-      // width: 10%;
-      margin: 5px 0 5px 40px;
-
-      &:hover{
-        cursor: pointer;
-      }
-    }
-  }
-}
-
-.space {
-  // background-color: red;
-  height: 20px;
-  width: 100vw;
-}
-
 .inform-area{
   // background-color: green;
+  margin: 20px auto;
   height: 100vh;
   width: 100vw;
 
