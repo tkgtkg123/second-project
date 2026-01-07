@@ -1,87 +1,167 @@
-.space {
-  // background-color: red;
-  height: 20px;
-  width: 100vw;
-}
+body {
+  background-color: rgb(105 236 246 / 65%);
 
-.content-area{
-  background-color: green;
-  // height: 100vh;
-  width: 100vw;
-  padding: 0 0 100px 0;
-
-  & .content-list {
-      background-color: yellow;
+  & .content-area{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding: 0 0 100px 0;
+  
+    & .content-list {
       list-style-type: none;
       display: flex;
       margin: 0;
-      padding: 0;
+      padding: 0;  
+
+      & .vanish {
+        animation: vanish 1s ease-in 1s ;
+      }
+
+      & .appear {
+        animation: appear 4s ease-out 2s forwards;
+      }
 
       & .item {
         margin: 30px 0 0 0;
         width: 50vw;
-
+        
         & .text {
-          font-size: 18px;
-        }        
+          font-size: 20px;
+        }
+
+        & .q-text {
+          display: flex;
+          flex-direction: column;
+
+          & .input-text {
+            font-size: 20px;
+            margin: 5px;
+            border-radius: 10px;
+            height: 2em;
+          }
+        }
+
+
+        & .answer-btn {
+          display: flex;
+          justify-content: center;
+          margin: 10px 0;
+          
+          & #a-btn {
+            height: 3rem;
+            width: 5rem;
+            font-size: 1.4rem;
+            border-radius: 15px;
+
+            &:hover {
+              cursor: pointer;
+              font-weight: bold;
+            }
+          }
+          
+        }
       }
 
       & .story-area {
         display: none;
+        opacity: 0;
+
+        & .bold {
+          font-weight: bold;
+          text-decoration: underline;
+          // .boldの文字の色はJavaScriptで操作している(関数randomColo)
+          
+          &:hover {
+            cursor: pointer;
+          }
+        }
       }
 
       & .picture-area {
-        background-color: blue;
-        height: 200px;
-        width: 25vw;
-      }
+        display: flex;
+        justify-content: center;
+        width: 15vw;
 
-  }
-  
-  // & .content-list {
-  //   padding: 0;
-  //   // margin: auto;
-  //   width: 80%;
-  //   display: grid;
-  //   // grid-template-columns: 1fr 1fr 1fr;
-  //   // grid-template-rows: 1fr 1fr;
-  //   gap: 30px;
-    
-  //   // & .content {
-  //   //   background-color: rgb(165, 206, 252);
-  //   //   height: 100%;
-  //   //   width: 100%;
-  //   //   text-align: center;
-  //   //   vertical-align: middle;
-  //   //   line-height: 25vh;
-  //   //   font-size: 22px;
-  //   //   border: 2px solid saturate($color: #b8b7d4, $amount: 0);
-  //   //   border-radius: 65px;
-  //   //   box-shadow: 2px 3px 12px black;
-      
-  //   //   &:hover {
-  //   //     cursor: pointer;
-  //   //   }
-  //   // }
-  // }
+        & .slideLeft {
+          transform-origin: center;
+          animation: slideLeft 5s ease-in-out 1s;
+        }
 
-  & .logout-area {
-    // background-color: red;
-    display: flex;
-    justify-content: flex-end;
-    margin: 50px auto;
-    width: 80%;
+        & .slideRight {
+          transform-origin: center;
+          animation: slideRight 5s ease-in-out 1s;
+        }
 
-    & .logout {
-      font-size: 18px;
-      color: blue;
+        & .picture {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          z-index: 10;
 
-      &:hover {
-        color: gray;
-        text-decoration: none;
-        cursor: pointer;
-      }
+          & .img {
+            height: 15vh;
+            width: 15vh;
+            animation: rotate 3s ease-in-out infinite;
+          }
+
+          & .rotate2 {
+            animation: 
+              toBig 1s ease-in-out forwards,
+              rotate2 3s ease-in-out 1s infinite,
+              toSmall 1s ease-in-out 6s forwards
+            ;
+          }
+        }
+      }  
     }
   }
+}
+
+@keyframes rotate {
+  0% {transform: rotate(30deg);}
+  50% {transform: rotate(-30deg);}
+  100% {transform: rotate(30deg);}
+}
+
+@keyframes rotate2 {
+  0% {transform: rotate(30deg) scale(2);}
+  50% {transform: rotate(-30deg) scale(2);}
+  100% {transform: rotate(30deg) scale(2);}
+}
+
+@keyframes slideLeft {
+  0% {transform: translate(0);}
+  50% {transform: translateX(-50vw);}
+  55% {transform: translateX(-50vw) scaleX(-1);}
+  95% {transform: translateX(-2vw) scaleX(-1);}
+  100% {transform: translateX(0);}
+}
+
+@keyframes slideRight {
+  0% {transform: translate(0);}
+  50% {transform: translateX(50vw);}
+  55% {transform: translateX(50vw) scaleX(-1);}
+  95% {transform: translateX(2vw) scaleX(-1);}
+  100% {transform: translateX(0);}
+}
+
+@keyframes toBig {
+  from {transform: scale(1);}
+  to {transform: scale(2);}
+}
+
+@keyframes toSmall {
+  from {transform: scale(2);}
+  to {transform: scale(1);}
+}
+
+@keyframes vanish {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@keyframes appear {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
