@@ -69,11 +69,9 @@ body .content-area .content-list .picture-area {
 }
 body .content-area .content-list .picture-area .slideLeft {
   transform-origin: center;
-  animation: slideLeft 5s ease-in-out 1s;
 }
 body .content-area .content-list .picture-area .slideRight {
   transform-origin: center;
-  animation: slideRight 5s ease-in-out 1s;
 }
 body .content-area .content-list .picture-area .picture {
   display: flex;
@@ -84,12 +82,31 @@ body .content-area .content-list .picture-area .picture {
 body .content-area .content-list .picture-area .picture .img {
   height: 15vh;
   width: 15vh;
-  animation: rotate 3s ease-in-out infinite;
+  transform-origin: center;
+  animation: rotateMove 3s ease-in-out infinite;
 }
-body .content-area .content-list .picture-area .picture .rotate2 {
-  animation: toBig 1s ease-in-out forwards, rotate2 3s ease-in-out 1s infinite, toSmall 1s ease-in-out 6s forwards;
+@keyframes rotateMove {
+  0% {
+    transform-origin: center center;
+    transform: rotate(0);
+  }
+  25% {
+    transform-origin: right center;
+    transform: rotate(90deg);
+  }
+  50% {
+    transform-origin: right centeright;
+    transform: rotate(180deg);
+  }
+  75% {
+    transform-origin: right center;
+    transform: rotate(270deg);
+  }
+  100% {
+    transform-origin: right center;
+    transform: rotate(360deg);
+  }
 }
-
 @keyframes rotate {
   0% {
     transform: rotate(30deg);
