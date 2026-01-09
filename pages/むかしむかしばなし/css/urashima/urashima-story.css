@@ -86,7 +86,10 @@ body .content-area .content-list .picture-area .picture .img {
   transform-origin: center;
 }
 body .content-area .content-list .picture-area .picture #LeftImg1 {
-  position: static;
+  position: absolute;
+  left: 43%;
+  top: 37%;
+  transform: translate(-40vw, -25vh);
 }
 
 @keyframes LeftImg1Moving {

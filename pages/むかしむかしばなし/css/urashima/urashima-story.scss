@@ -108,9 +108,12 @@ body {
           }
 
           & #LeftImg1 {
+            position: absolute;
+            left: 43%;
+            top: 37%;
+            transform: translate(-40vw, -25vh);
             // background-color: red;
             // animation: LeftImg1Moving 5s ease-in-out infinite;
-            position: static;
 
           }
 
