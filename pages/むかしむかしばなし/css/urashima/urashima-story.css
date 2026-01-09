@@ -86,43 +86,22 @@ body .content-area .content-list .picture-area .picture .img {
   transform-origin: center;
 }
 body .content-area .content-list .picture-area .picture #LeftImg1 {
-  animation: LeftImg1Moving 5s ease-in-out infinite;
+  position: static;
 }
+
 @keyframes LeftImg1Moving {
   0% {
     position: absolute;
     top: 50%;
     left: 50%;
-  }
-  20% {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-5vw, -27vh) rotate(72deg);
-  }
-  40% {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(15vw, -10vh) rotate(144deg);
-  }
-  60% {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-5vw, 10vh) rotate(216deg);
-  }
-  80% {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-27vw, -10vh) rotate(288deg);
+    transform-origin: 0vw 0vh;
+    transform: translate(-50%, -50%);
   }
   100% {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-5vw, -5vh) rotate(360deg);
+    transform: translate(-27vw, -10vh);
   }
 }
 @keyframes rotate {
