@@ -83,13 +83,28 @@ body .content-area .content-list .picture-area .picture {
 body .content-area .content-list .picture-area .picture .img {
   height: 15vh;
   width: 15vh;
+  position: absolute;
+  left: 40%;
+  top: 40%;
   transform-origin: center;
 }
 body .content-area .content-list .picture-area .picture #LeftImg1 {
-  position: absolute;
-  left: 43%;
-  top: 37%;
-  transform: translate(-40vw, -25vh);
+  transform: translate(-280%, -120%);
+}
+body .content-area .content-list .picture-area .picture #LeftImg2 {
+  transform: translate(-280%, 0%);
+}
+body .content-area .content-list .picture-area .picture #LeftImg3 {
+  transform: translate(-280%, 110%);
+}
+body .content-area .content-list .picture-area .picture #RightImg1 {
+  transform: translate(350%, -120%);
+}
+body .content-area .content-list .picture-area .picture #RightImg2 {
+  transform: translate(350%, 0%);
+}
+body .content-area .content-list .picture-area .picture #RightImg3 {
+  transform: translate(350%, 110%);
 }
 
 @keyframes LeftImg1Moving {
