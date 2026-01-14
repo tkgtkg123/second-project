@@ -90,29 +90,24 @@ const changePage = () => {
 }
 
 const slideImg = () => {
-    const leftImg = document.getElementById("LeftImg");
-    const RightImg = document.getElementById("RightImg");
-    const imgs = document.querySelectorAll(".img");
-    imgs.forEach(img => {
-        img.classList.add("rotate2");
+    const LeftImg = document.querySelectorAll(".LeftImg");
+    LeftImg.forEach((img, index) => {
+        img.removeAttribute("id");
+        img.id = `LeftImg${index+1}Move`;
+        console.log(index+1);
     });
-    leftImg.classList.add("slideRight");
-    RightImg.classList.add("slideLeft");
-    setTimeout(() => {
-        imgs.forEach(img => {
-            img.classList.remove("rotate2")
-        })
-    }, 7000);
+
+
 }
 
 const answer_btn = document.getElementById("a-btn");
 answer_btn.addEventListener("click", () => {
-    makeStory();
-    changePage();
+    // makeStory();
+    // changePage();
     slideImg();
-    setTimeout(() => {
-        wordColor();
-    }, 7000);
+    // setTimeout(() => {
+    //     wordColor();
+    // }, 7000);
     
     console.log("push btn");
 });
