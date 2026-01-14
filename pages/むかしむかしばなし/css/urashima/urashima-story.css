@@ -89,22 +89,22 @@ body .content-area .content-list .picture-area .picture .img {
   transform-origin: center;
 }
 body .content-area .content-list .picture-area .picture #LeftImg1 {
-  transform: translate(-280%, -120%);
+  transform: translate(-30vw, -20vh);
 }
 body .content-area .content-list .picture-area .picture #LeftImg2 {
-  transform: translate(-280%, 0%);
+  transform: translate(-30vw, 0vh);
 }
 body .content-area .content-list .picture-area .picture #LeftImg3 {
-  transform: translate(-280%, 110%);
+  transform: translate(-30vw, 15vh);
 }
 body .content-area .content-list .picture-area .picture #RightImg1 {
-  transform: translate(350%, -120%);
+  transform: translate(35vw, -20vh);
 }
 body .content-area .content-list .picture-area .picture #RightImg2 {
-  transform: translate(350%, 0%);
+  transform: translate(35vw, 0vh);
 }
 body .content-area .content-list .picture-area .picture #RightImg3 {
-  transform: translate(350%, 110%);
+  transform: translate(35vw, 15vh);
 }
 
 @keyframes LeftImg1Moving {
