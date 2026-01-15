@@ -107,13 +107,34 @@ body .content-area .content-list .picture-area .picture #RightImg3 {
   transform: translate(35vw, 15vh);
 }
 body .content-area .content-list .picture-area .picture #LeftImg1Move {
+  transform: translate(-30vw, -20vh);
   animation: LeftImg1Move 5s ease-in infinite;
 }
 body .content-area .content-list .picture-area .picture #LeftImg2Move {
-  animation: LeftImg2Move 5s ease-in infinite;
+  transform: translate(-30vw, 0vh);
+  animation: LeftImg2Move 5s ease-in 0.2s infinite;
 }
 body .content-area .content-list .picture-area .picture #LeftImg3Move {
-  animation: LeftImg3Move 5s ease-in infinite;
+  transform: translate(-30vw, 15vh);
+  animation: LeftImg3Move 5s ease-in 0.4s infinite;
+}
+body .content-area .content-list .picture-area .picture #RightImg1Move {
+  transform: translate(35vw, -20vh);
+  animation: RightImg1Move 5s ease-in 0.4s infinite;
+}
+body .content-area .content-list .picture-area .picture #RightImg2Move {
+  transform: translate(35vw, 0vh);
+  animation: RightImg2Move 5s ease-in 0.2s infinite;
+}
+body .content-area .content-list .picture-area .picture #RightImg3Move {
+  transform: translate(35vw, 15vh);
+  animation: RightImg3Move 5s ease-in infinite;
+}
+body .content-area .content-list .picture-area .picture .toBig {
+  animation: toBig 1s ease-in-out;
+}
+body .content-area .content-list .picture-area .picture .toSmall {
+  animation: toSmall 1s ease-in-out;
 }
 
 @keyframes LeftImg1Move {
@@ -135,6 +156,30 @@ body .content-area .content-list .picture-area .picture #LeftImg3Move {
 @keyframes LeftImg3Move {
   0% {
     transform: rotate(0deg) translate(-30vw, 15vh);
+  }
+  100% {
+    transform: rotate(1080deg) translate(0vw, 0vh);
+  }
+}
+@keyframes RightImg1Move {
+  0% {
+    transform: rotate(0deg) translate(35vw, -20vh);
+  }
+  100% {
+    transform: rotate(1080deg) translate(0vw, 0vh);
+  }
+}
+@keyframes RightImg2Move {
+  0% {
+    transform: rotate(0deg) translate(35vw, 0vh);
+  }
+  100% {
+    transform: rotate(1080deg) translate(0vw, 0vh);
+  }
+}
+@keyframes RightImg3Move {
+  0% {
+    transform: rotate(0deg) translate(35vw, 15vh);
   }
   100% {
     transform: rotate(1080deg) translate(0vw, 0vh);

@@ -60,7 +60,6 @@ const makeStory = () => {
     `;
     story_area.innerHTML = storyText;
     changeFontColor();
-
 };
 
 const randomColor = () => {
@@ -89,24 +88,41 @@ const changePage = () => {
     }, 2000);
 }
 
-const slideImg = () => {
+const LeftImgRotate = () => {
     const LeftImg = document.querySelectorAll(".LeftImg");
-    // LeftImg.forEach((img, index) => {
-    //     img.removeAttribute("id");
-    //     img.id = `LeftImg${index+1}Move`;
-    //     console.log(index+1);
-    // });
-    console.log(LeftImg[0]);
-    console.log(LeftImg[0].index);
+    LeftImg.forEach((img, index) => {
+        img.removeAttribute("id");
+        img.id = `LeftImg${index+1}Move`;
+        // console.log(index+1);
+    });
+}
 
+const RightImgRotate = () => {
+    const RightImg = document.querySelectorAll(".RightImg");
+    RightImg.forEach((img, index) => {
+        img.removeAttribute("id");
+        img.id = `RightImg${index+1}Move`;
+        // console.log(index+1);
+    });
+}
 
+const ChangeScale = () => {
+    const img = document.querySelectorAll(".img");
+    img.forEach(img =>{
+        img.classList.add("toBig");
+        setTimeout(() => {
+            img.classList.remove("toBig");
+            img.classList.add("toSmall");
+        }, 2000);
+    })
 }
 
 const answer_btn = document.getElementById("a-btn");
 answer_btn.addEventListener("click", () => {
     // makeStory();
     // changePage();
-    slideImg();
+    LeftImgRotate();
+    RightImgRotate();
     // setTimeout(() => {
     //     wordColor();
     // }, 7000);
