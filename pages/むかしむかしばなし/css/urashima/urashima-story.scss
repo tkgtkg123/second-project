@@ -110,29 +110,17 @@ body {
             // animation: rotateMove 3s ease-in-out infinite;
           }
 
-          & #LeftImg1 {
-            transform: translate(-30vw, -20vh);
-          }
-          & #LeftImg1Move {
-            animation: LeftImg1Move 3s ease infinite;
-          }
-          & #LeftImg2 {
-            transform: translate(-30vw, 0vh);
-          }
-          & #LeftImg3 {
-            transform: translate(-30vw, 15vh);
-          }
-          & #RightImg1 {
-            transform: translate(35vw, -20vh);
-          }
-          & #RightImg2 {
-            transform: translate(35vw, 0vh);
-          }
-          & #RightImg3 {
-            transform: translate(35vw, 15vh);
-          }
-
-
+          & #LeftImg1 {transform: translate(-30vw, -20vh);}
+          & #LeftImg2 {transform: translate(-30vw, 0vh);}
+          & #LeftImg3 {transform: translate(-30vw, 15vh);}
+          & #RightImg1 {transform: translate(35vw, -20vh);}
+          & #RightImg2 {transform: translate(35vw, 0vh);}
+          & #RightImg3 {transform: translate(35vw, 15vh);}
+          & #LeftImg1Move {animation: LeftImg1Move 5s ease-in infinite;}
+          & #LeftImg2Move {animation: LeftImg2Move 5s ease-in infinite;}
+          & #LeftImg3Move {animation: LeftImg3Move 5s ease-in infinite;}
+          
+          
         }
       }  
     }
@@ -141,34 +129,26 @@ body {
 
 @keyframes LeftImg1Move {
   0% {
-    transform: translate(-30vw, -20vh);
-  }
-  // 10% {
-  //   transform: rotate(45deg) translate(-20vw, -10vh);
-  //   }
-  20% {
-    transform: rotate(90deg) translate(-20vw, -10vh);
-    }
-  30% {
-    transform: rotate(160deg) translate(-20vw, -10vh);
-  }
-  40% {
-    transform: rotate(260deg) translate(-20vw, -10vh);
-  }
-  50% {
-    transform: rotate(360deg) translate(-10vw, -10vh);
-  }
-  60% {
-    transform: rotate(510deg) translate(-10vw, -10vh);
-  }
-  70% {
-    transform: rotate(590deg) translate(0vw, -10vh);
-  }
-  80% {
-    transform: rotate(720deg) translate(0vw, 0vh);
+    transform: rotate(0deg) translate(-30vw, -20vh);
   }
   100% {
-    transform: translate(-30vw, -20vh);
+    transform: rotate(1080deg) translate(0vw, 0vh);
+  }
+}
+@keyframes LeftImg2Move {
+  0% {
+    transform: rotate(0deg) translate(-30vw, 0vh);
+  }
+  100% {
+    transform: rotate(1080deg) translate(0vw, 0vh);
+  }
+}
+@keyframes LeftImg3Move {
+  0% {
+    transform: rotate(0deg) translate(-30vw, 15vh);
+  }
+  100% {
+    transform: rotate(1080deg) translate(0vw, 0vh);
   }
 }
         

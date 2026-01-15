@@ -91,11 +91,13 @@ const changePage = () => {
 
 const slideImg = () => {
     const LeftImg = document.querySelectorAll(".LeftImg");
-    LeftImg.forEach((img, index) => {
-        img.removeAttribute("id");
-        img.id = `LeftImg${index+1}Move`;
-        console.log(index+1);
-    });
+    // LeftImg.forEach((img, index) => {
+    //     img.removeAttribute("id");
+    //     img.id = `LeftImg${index+1}Move`;
+    //     console.log(index+1);
+    // });
+    console.log(LeftImg[0]);
+    console.log(LeftImg[0].index);
 
 
 }
