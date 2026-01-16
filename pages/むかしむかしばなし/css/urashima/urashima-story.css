@@ -166,7 +166,7 @@ body .content-area .content-list .picture-area .picture .toSmall {
     transform: rotate(0deg) translate(35vw, -20vh);
   }
   100% {
-    transform: rotate(1080deg) translate(0vw, 0vh);
+    transform: rotate(1440deg) translate(0vw, 0vh);
   }
 }
 @keyframes RightImg2Move {
@@ -174,7 +174,7 @@ body .content-area .content-list .picture-area .picture .toSmall {
     transform: rotate(0deg) translate(35vw, 0vh);
   }
   100% {
-    transform: rotate(1080deg) translate(0vw, 0vh);
+    transform: rotate(1440deg) translate(0vw, 0vh);
   }
 }
 @keyframes RightImg3Move {
@@ -182,7 +182,7 @@ body .content-area .content-list .picture-area .picture .toSmall {
     transform: rotate(0deg) translate(35vw, 15vh);
   }
   100% {
-    transform: rotate(1080deg) translate(0vw, 0vh);
+    transform: rotate(1440deg) translate(0vw, 0vh);
   }
 }
 @keyframes rotate {

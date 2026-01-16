@@ -113,19 +113,22 @@ const ChangeScale = () => {
         setTimeout(() => {
             img.classList.remove("toBig");
             img.classList.add("toSmall");
-        }, 2000);
+        }, 1000);
     })
 }
 
 const answer_btn = document.getElementById("a-btn");
 answer_btn.addEventListener("click", () => {
-    // makeStory();
-    // changePage();
-    LeftImgRotate();
-    RightImgRotate();
-    // setTimeout(() => {
-    //     wordColor();
-    // }, 7000);
+    makeStory();
+    changePage();
+    ChangeScale();
+    setTimeout(() => {
+        LeftImgRotate();
+        RightImgRotate();
+    }, 2000);
+    setTimeout(() => {
+        wordColor();
+    }, 7000);
     
     console.log("push btn");
 });
