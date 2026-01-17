@@ -85,7 +85,7 @@ const changePage = () => {
         q_area.style.display = "none";
         story_area.style.display = "block";
         story_area.classList.add("appear");
-    }, 2000);
+    }, 1000);
 }
 
 const LeftImgRotate = () => {
@@ -106,34 +106,6 @@ const RightImgRotate = () => {
     });
 }
 
-const ChangeScale = () => {
-    const img = document.querySelectorAll(".img");
-    img.forEach(img =>{
-        img.classList.add("toBig");
-        setTimeout(() => {
-            img.classList.remove("toBig");
-            img.classList.add("toSmall");
-        }, 1000);
-    })
-}
-
-const answer_btn = document.getElementById("a-btn");
-answer_btn.addEventListener("click", () => {
-    makeStory();
-    changePage();
-    ChangeScale();
-    setTimeout(() => {
-        LeftImgRotate();
-        RightImgRotate();
-    }, 2000);
-    setTimeout(() => {
-        wordColor();
-    }, 7000);
-    
-    console.log("push btn");
-});
-
-
 const wordColor = () => {
     const bolds = document.querySelectorAll(".bold");
     bolds.forEach(bold => {
@@ -142,5 +114,22 @@ const wordColor = () => {
         } );
     });
 };
+
+const answer_btn = document.getElementById("a-btn");
+answer_btn.addEventListener("click", () => {
+    makeStory();
+    LeftImgRotate();
+    RightImgRotate();
+    setTimeout(() => {
+        changePage();
+    }, 3000);
+    setTimeout(() => {
+        wordColor();
+    }, 7000);
+    
+    console.log("push btn");
+});
+
+
 
 

@@ -15,10 +15,10 @@ body .content-area .content-list {
   position: relative;
 }
 body .content-area .content-list .vanish {
-  animation: vanish 1s ease-in 1s;
+  animation: vanish 1s ease-in forwards;
 }
 body .content-area .content-list .appear {
-  animation: appear 4s ease-out 2s forwards;
+  animation: appear 4s ease-out forwards;
 }
 body .content-area .content-list .item {
   margin: 30px 0 0 0;
@@ -108,41 +108,35 @@ body .content-area .content-list .picture-area .picture #RightImg3 {
 }
 body .content-area .content-list .picture-area .picture #LeftImg1Move {
   transform: translate(-30vw, -20vh);
-  animation: LeftImg1Move 5s ease-in infinite;
+  animation: LeftImg1Move 5.5s ease-in;
 }
 body .content-area .content-list .picture-area .picture #LeftImg2Move {
   transform: translate(-30vw, 0vh);
-  animation: LeftImg2Move 5s ease-in 0.2s infinite;
+  animation: LeftImg2Move 5.3s ease-in 0.2s;
 }
 body .content-area .content-list .picture-area .picture #LeftImg3Move {
   transform: translate(-30vw, 15vh);
-  animation: LeftImg3Move 5s ease-in 0.4s infinite;
+  animation: LeftImg3Move 5.1s ease-in 0.4s;
 }
 body .content-area .content-list .picture-area .picture #RightImg1Move {
   transform: translate(35vw, -20vh);
-  animation: RightImg1Move 5s ease-in 0.4s infinite;
+  animation: RightImg1Move 5.1s ease-in 0.4s;
 }
 body .content-area .content-list .picture-area .picture #RightImg2Move {
   transform: translate(35vw, 0vh);
-  animation: RightImg2Move 5s ease-in 0.2s infinite;
+  animation: RightImg2Move 5.3s ease-in 0.2s;
 }
 body .content-area .content-list .picture-area .picture #RightImg3Move {
   transform: translate(35vw, 15vh);
-  animation: RightImg3Move 5s ease-in infinite;
-}
-body .content-area .content-list .picture-area .picture .toBig {
-  animation: toBig 1s ease-in-out;
-}
-body .content-area .content-list .picture-area .picture .toSmall {
-  animation: toSmall 1s ease-in-out;
+  animation: RightImg3Move 5.5s ease-in;
 }
 
 @keyframes LeftImg1Move {
   0% {
-    transform: rotate(0deg) translate(-30vw, -20vh);
+    transform: rotate(0deg) translate(-30vw, -20vh) scale(1);
   }
   100% {
-    transform: rotate(1080deg) translate(0vw, 0vh);
+    transform: rotate(1080deg) translate(0vw, 0vh) scale(3);
   }
 }
 @keyframes LeftImg2Move {
@@ -155,34 +149,34 @@ body .content-area .content-list .picture-area .picture .toSmall {
 }
 @keyframes LeftImg3Move {
   0% {
-    transform: rotate(0deg) translate(-30vw, 15vh);
+    transform: rotate(0deg) translate(-30vw, 15vh) scale(1);
   }
   100% {
-    transform: rotate(1080deg) translate(0vw, 0vh);
+    transform: rotate(1080deg) translate(0vw, 0vh) scale(3);
   }
 }
 @keyframes RightImg1Move {
   0% {
-    transform: rotate(0deg) translate(35vw, -20vh);
+    transform: rotate(0deg) translate(35vw, -20vh) scale(1);
   }
   100% {
-    transform: rotate(1440deg) translate(0vw, 0vh);
+    transform: rotate(1440deg) translate(0vw, 0vh) scale(3);
   }
 }
 @keyframes RightImg2Move {
   0% {
-    transform: rotate(0deg) translate(35vw, 0vh);
+    transform: rotate(0deg) translate(35vw, 0vh) scale(1);
   }
   100% {
-    transform: rotate(1440deg) translate(0vw, 0vh);
+    transform: rotate(1440deg) translate(0vw, 0vh) scale(3);
   }
 }
 @keyframes RightImg3Move {
   0% {
-    transform: rotate(0deg) translate(35vw, 15vh);
+    transform: rotate(0deg) translate(35vw, 15vh) scale(1);
   }
   100% {
-    transform: rotate(1440deg) translate(0vw, 0vh);
+    transform: rotate(1440deg) translate(0vw, 0vh) scale(3);
   }
 }
 @keyframes rotate {
@@ -239,22 +233,6 @@ body .content-area .content-list .picture-area .picture .toSmall {
   }
   100% {
     transform: translateX(0);
-  }
-}
-@keyframes toBig {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(2);
-  }
-}
-@keyframes toSmall {
-  from {
-    transform: scale(2);
-  }
-  to {
-    transform: scale(1);
   }
 }
 @keyframes vanish {
