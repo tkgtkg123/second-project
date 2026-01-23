@@ -14,14 +14,11 @@ const changeFontColor = () => {
 }
 
 const makeStory = () => {
-    const q1 = document.getElementById("q1").value || "桃色";
-    const q2 = document.getElementById("q2").value || "きびだんご";
-    const q3 = document.getElementById("q3").value || "鬼に金棒";
-    const q4 = document.getElementById("q4").value || "がんばるぞー！";
-    const q5 = document.getElementById("q5").value || "どうしたの？だいじょうぶ？";
-    const q6 = document.getElementById("q6").value || "熊";
-    const q7 = document.getElementById("q7").value || "新潟";
-    const q8 = document.getElementById("q8").value || "ピーマン";
+    const q1 = document.getElementById("q1").value || "家";
+    const q2 = document.getElementById("q2").value || "温泉に行って露天風呂に入った";
+    const q3 = document.getElementById("q3").value || "2度あることは3度ある";
+    const q4 = document.getElementById("q4").value || "冬";
+    const q5 = document.getElementById("q5").value || "大切な思い出";
     const story_area = document.getElementById("item2");
     const storyText = `
 
@@ -60,7 +57,7 @@ const makeStory = () => {
                 <p class="text" id="text11">やがて、月からの使者が迎えに来る夜が訪れました。その夜は、<span class="bold q4-answer">${q4}</span>のような穏やかな光が世界を包んでいました。</p>
             </div>
             <div class="content" id="p12">
-                <p class="text" id="text12">かぐや姫は最後に手紙を残しました。「私にとっての愛は、<span class="bold q5-answer">${q5}</span>でした。どうか、忘れないでください。」</p>
+                <p class="text" id="text12">かぐや姫は最後に手紙を残しました。「ありがとう。私にとって二人は、まるで<span class="bold q5-answer">${q5}</span>のようでした。どうか、忘れないでください。」</p>
             </div>
             <div class="content" id="p13">
                 <p class="text" id="text13">光の中に包まれながら、姫は静かに月へと昇っていきました。</p>
@@ -95,14 +92,18 @@ const changePage = () => {
 }
 
 const slideImg = () => {
-    const leftImg = document.getElementById("LeftImg");
-    const RightImg = document.getElementById("RightImg");
+    const leftImgs = document.querySelectorAll(".LeftImg");
+    const RightImgs = document.querySelectorAll(".RightImg");
     const imgs = document.querySelectorAll(".img");
     imgs.forEach(img => {
         img.classList.add("rotate2");
     });
-    leftImg.classList.add("slideRight");
-    RightImg.classList.add("slideLeft");
+    leftImgs.forEach(l_img => {
+        l_img.classList.add("slideRight");
+    });
+    RightImgs.forEach(r_img => {
+        r_img.classList.add("slideLeft");
+    })
     setTimeout(() => {
         imgs.forEach(img => {
             img.classList.remove("rotate2")
