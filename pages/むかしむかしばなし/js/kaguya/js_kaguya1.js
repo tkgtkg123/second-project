@@ -48,7 +48,7 @@ const makeStory = () => {
                 <p class="text" id="text8">「私は、<span class="bold q3-answer">${q3}</span>という言葉を胸に生きているのです。」そう語る姫の瞳は、どこか遠い月を見つめていました。</p>
             </div>
             <div class="content" id="p9">
-                <p class="text" id="text9">ある晩、かぐや姫は月を見上げて静かに涙を流しました。「最近、<span class="bold q2-answer">${q2}</span>ことがあって…心が揺れてしまうのです。」</p>
+                <p class="text" id="text9">ある晩、かぐや姫は月を見上げて静かに涙を流しました。「最近、<span class="bold q2-answer">${q2}</span>ことがあって…それが忘れられず心が揺れてしまうのです。」</p>
             </div>
             <div class="content" id="p10">
                 <p class="text" id="text10">おじいさんとおばあさんはそっと寄り添い、「わしらがそばにおるぞ」と優しく声をかけました。</p>

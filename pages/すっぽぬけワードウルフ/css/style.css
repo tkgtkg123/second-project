@@ -1,65 +1,60 @@
-.header {
+@charset "UTF-8";
+.container {
+  /* ------以下、ヘッダー部----- */
+  height: 100vh;
+  width: 100vw;
+}
+.container .header {
   background-color: rgb(255, 119, 0);
   height: 4em;
   width: 100vw;
   display: flex;
 }
-.header .logo-area {
+.container .header .logo-area {
   height: 100%;
   width: 50%;
   display: flex;
   justify-content: flex-start;
 }
-.header .logo-area .logo {
+.container .header .logo-area .logo {
   border: 2px solid black;
   height: 51px;
   width: 71px;
   margin: 5px 0 5px 40px;
 }
-.header .logo-area .logo:hover {
+.container .header .logo-area .logo:hover {
   cursor: pointer;
 }
-.header .button-area {
+.container .header .button-area {
   height: 100%;
   width: 30%;
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
 }
-.header .button-area .btn {
+.container .header .button-area .btn {
   height: 80%;
   margin: 1% 1em;
   font-size: 15px;
   border-radius: 5px;
 }
-.header .button-area .btn:hover {
+.container .header .button-area .btn:hover {
   cursor: pointer;
 }
-.header .button-area .logout {
+.container .header .button-area .logout {
   margin-right: 0;
 }
-
-.space {
-  height: 20px;
-  width: 100vw;
+.container {
+  /* ------以下、アプリ本体----- */
 }
-
-.content-area {
-  height: 100vh;
-  width: 100vw;
+.container .main {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(208, 193, 193);
 }
-.content-area .logout-area {
-  display: flex;
-  justify-content: flex-end;
-  margin: 50px auto;
-  width: 80%;
-}
-.content-area .logout-area .logout {
-  font-size: 18px;
-  color: blue;
-}
-.content-area .logout-area .logout:hover {
-  color: gray;
-  text-decoration: none;
-  cursor: pointer;
+.container .main .bar {
+  height: 100px;
+  width: 100px;
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */
