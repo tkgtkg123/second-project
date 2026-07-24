@@ -59,15 +59,48 @@
   /* ------以下、アプリ本体----- */
 
   .main {
+
     height: 100%;
     width: 100%;
     padding: 20px;
     background-color: rgb(208 193 193);
 
+    .name_area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .name_input {
+        border: 2px solid black;
+        margin: 5px;
+        width: 250px;
+        height: 40px;
+      }
+
+      .menber_btn {
+        margin: 5px;
+        background: none;
+        border: none;
+        font-size: 30px;
+        font-weight: 900;
+        -webkit-text-stroke: 0.7px black;
+        cursor: pointer;
+      }
+      
+      .add {
+        color: red;
+      }
+      .remove {
+        color: blue;
+      }
+
+    }
+
     .bar {
       height: 100px;
       width: 100px;
       background-color: red;
+      border: 1px solid black;
     }
   }
 }
