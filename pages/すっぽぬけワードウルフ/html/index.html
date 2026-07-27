@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/common/css/reset.css">
+    <link rel="stylesheet" href="/common/css/style-header.css">
     <link rel="stylesheet" href="/pages/すっぽぬけワードウルフ/css/style.css">
     <title>すっぽぬけワードウルフ</title>
 </head>
@@ -12,12 +13,14 @@
         <div class="container">
 
             <!-- ------以下、ヘッダー部------- -->
-            <div class="header">
+           <div class="header">
                 <div class="logo-area">
                     <img class="logo" src="/image/logo2.png" alt="logo">
                 </div>
                 <div class="button-area">
-                    <button class="btn logout"><a href="/pages/ログインページ/index.html">ログアウト</a></button>
+                    <a class="btn home" href="">ルール説明</a></button>
+                    <a class="btn home" href="/index.html">ホーム</a></button>
+                    <a class="btn logout" href="/pages/ログインページ/index.html">ログ<br>アウト</a></button>
                 </div>
             </div>
 
@@ -29,13 +32,23 @@
                     <button class="menber_btn add">＋</button>
                     <button class="menber_btn remove">ー</button>
                 </div>
-                <div class="btn_area"><button class="btn moji"></button></div>
+                <div class="name_area">
+                    <input type="text" class="name_input" placeholder="名前を入力">
+                    <button class="menber_btn add">＋</button>
+                    <button class="menber_btn remove">ー</button>
+                </div>
+                <div class="name_area">
+                    <input type="text" class="name_input" placeholder="名前を入力">
+                    <button class="menber_btn add">＋</button>
+                    <button class="menber_btn remove">ー</button>
+                </div>
+                <div class="btn_area">
+                    <button class="neXt_page_btn moji">
+                        <a class="neXt_page_link" href="/pages/すっぽぬけワードウルフ/html/menu.html">次へ</a>
+                    </button>
+                </div>
             </div>
-
         </div>
-
     </main>    
-
 </body>
-
 </html>

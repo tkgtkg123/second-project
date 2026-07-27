@@ -35,17 +35,18 @@
     justify-content: flex-end;
 
     & .btn {
-      background-color: whitesmoke;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      margin: 0 10px;
-      padding: 10px;
-      font-size: 15px;
-      border: 2px solid black;
-      border-radius: 5px;
-      text-decoration: none;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 100%;
+    margin: 5px 5px;
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
 
       &:hover{
         cursor: pointer;

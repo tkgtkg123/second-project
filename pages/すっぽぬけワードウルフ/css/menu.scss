@@ -13,33 +13,6 @@
     padding: 20px;
     background-color: rgb(208 193 193);
 
-    .name_area {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .name_input {
-        border: 2px solid black;
-        margin: 5px;
-        width: 250px;
-        height: 40px;
-      }
-      .menber_btn {
-        margin: 5px;
-        background: none;
-        border: none;
-        font-size: 30px;
-        font-weight: 900;
-        -webkit-text-stroke: 0.7px black;
-        cursor: pointer;
-      }
-      .add {
-        color: red;
-      }
-      .remove {
-        color: blue;
-      }
-    }
     .btn_area {
       display: flex;
       padding: auto;
@@ -47,8 +20,8 @@
       justify-content: center;
       
       .neXt_page_btn {
-        width: 70px;
-        height: 30px;
+        width: 200px;
+        height: 40px;
         font-size: 18px;
         border: 2px solid #7cc5b7;
         color: #1c51e1;
