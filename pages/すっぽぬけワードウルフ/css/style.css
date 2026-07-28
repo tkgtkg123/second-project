@@ -39,7 +39,6 @@
 }
 .container .main .btn_area {
   display: flex;
-  padding: auto;
   padding: 20px;
   justify-content: center;
 }

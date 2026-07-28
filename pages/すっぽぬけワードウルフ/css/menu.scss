@@ -12,12 +12,43 @@
     width: 100%;
     padding: 20px;
     background-color: rgb(208 193 193);
+    display: flex;
+    flex-wrap: wrap;
+
+    .option {
+      width: 33.333%;
+      border: 2px solid black;
+
+      .moji {
+        display: flex;
+        justify-content: center;
+      }
+      .list_area {
+        display: flex;
+        justify-content: center;
+      }
+
+      .menber_select::after {
+        content: "人";
+      }
+      .time_select::after {
+        content: "分";
+      }
+
+    }
+
+
+    
+
+    // -----以下、進行ボタン部分-----
 
     .btn_area {
       display: flex;
-      padding: auto;
+      justify-content: center;
+      width: 100%;
       padding: 20px;
       justify-content: center;
+
       
       .neXt_page_btn {
         width: 200px;

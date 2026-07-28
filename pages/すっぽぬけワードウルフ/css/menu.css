@@ -10,10 +10,31 @@
   width: 100%;
   padding: 20px;
   background-color: rgb(208, 193, 193);
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .main .option {
+  width: 33.333%;
+  border: 2px solid black;
+}
+.container .main .option .moji {
+  display: flex;
+  justify-content: center;
+}
+.container .main .option .list_area {
+  display: flex;
+  justify-content: center;
+}
+.container .main .option .menber_select::after {
+  content: "人";
+}
+.container .main .option .time_select::after {
+  content: "分";
 }
 .container .main .btn_area {
   display: flex;
-  padding: auto;
+  justify-content: center;
+  width: 100%;
   padding: 20px;
   justify-content: center;
 }

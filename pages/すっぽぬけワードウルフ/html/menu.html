@@ -12,11 +12,59 @@
     <main>
         <div class="container">
 
+            <!-- ------以下、ヘッダー部------- -->
+           <div class="header">
+                <div class="logo-area">
+                    <img class="logo" src="/image/logo2.png" alt="logo">
+                </div>
+                <div class="button-area">
+                    <a class="btn home" href="">ルール説明</a></button>
+                    <a class="btn home" href="/index.html">ホーム</a></button>
+                    <a class="btn logout" href="/pages/ログインページ/index.html">ログアウト</a></button>
+                </div>
+            </div>
+
             <!-- ------以下、アプリ本体------- -->
 
             <div class="option_area main">
+                <!-- -----以下、基本ルール部分----- -->
+                <div class="base_rule_area option">
+                    <!-- -----ウルフ人数設定----- -->
+                    <div class="wolf base_rule">
+                        <div class="moji">ウルフ</div>
+                        <div class="menber_select">
+                            <input type="text" class="pull_down">
+                        </div>
+                    </div>
+                    <!-- -----トーク時間設定----- -->
+                    <div class="talk_time base_rule">
+                        <div class="moji">トーク時間</div>
+                        <div class="time_select">
+                            <input type="text" class="pull_down">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- -----以下、トークテーマ部分----- -->
+                <div class="talk_thema option">
+                    <div class="moji">トークテーマ</div>
+                    <div class="list_area">
+                        <ul class="list">
+                            <li class="item1">食事</li>
+                            <li class="item2">スポーツ</li>
+                            <li class="item3">恋愛</li>
+                            <li class="item4">学校</li>
+                            <li class="item5">遊び</li>
+                            <li class="item6">漫画・アニメ</li>
+                            <li class="item7">ドラマ</li>
+                            <li class="item8">アダルト</li>
+                            <li class="item9">自分で設定する</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- -----以下、追加ルール部分----- -->
                 <div class="extra_rule option">
-                    <div class="moji"></div>
+                    <div class="moji">追加ルール</div>
                     <div class="listarea">
                         <ul class="list">
                             <li class="item1">英語・ヨコ文字禁止</li>
@@ -27,45 +75,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="talk_thema option">
-                    <div class="moji">
-                        <div class="list_area">
-                            <ul class="list">
-                                <li class="item1">食事</li>
-                                <li class="item2">スポーツ</li>
-                                <li class="item3">恋愛</li>
-                                <li class="item4">学校</li>
-                                <li class="item5">遊び</li>
-                                <li class="item6">漫画・アニメ</li>
-                                <li class="item7">ドラマ</li>
-                                <li class="item8">アダルト</li>
-                                <li class="item9">自分で設定する</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="base_rule_area option">
-                    <div class="wolf base_rule">
-                        <div class="moji">
-                            <div class="menber_select">
-                                <input type="text" class="pull_down">
-                                <div class="moji"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="talk_time base_rule">
-                        <div class="moji">
-                            <div class="time_select">
-                                <input type="text" class="pull_down">
-                                <div class="moji"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- -----以下、進行ボタン部分----- -->
                 <div class="btn_area">
                     <button class="neXt_page_btn moji">
                         <a class="neXt_page_link" href="">ゲームスタート</a>
-                    </button></div>
+                    </button>
+                </div>
             </div>
         </div>
     </main>  
