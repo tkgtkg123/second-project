@@ -20,10 +20,31 @@
 .container .main .option .moji {
   display: flex;
   justify-content: center;
+  padding: 10px;
+  font-size: 20px;
 }
 .container .main .option .list_area {
   display: flex;
   justify-content: center;
+}
+.container .main .option .list {
+  list-style: none;
+  padding: 0;
+}
+.container .main .option .list .item {
+  padding: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.container .main .option .list .item_thema {
+  background-color: palegreen;
+  border: 1px solid #53ca0f;
+}
+.container .main .option .list .item_rule {
+  background-color: deepskyblue;
+  border: 1px solid #0f14ca;
 }
 .container .main .option .menber_select::after {
   content: "人";
