@@ -33,14 +33,18 @@
                     <div class="wolf base_rule">
                         <div class="moji">ウルフ</div>
                         <div class="menber_select">
-                            <input type="text" class="pull_down">
+                            <select name="wolf_menber" class="pulldown wolf_pulldown">
+                                <!-- 選択肢はjavascriptで作成 -->
+                            </select>
                         </div>
                     </div>
                     <!-- -----トーク時間設定----- -->
                     <div class="talk_time base_rule">
                         <div class="moji">トーク時間</div>
                         <div class="time_select">
-                            <input type="text" class="pull_down">
+                            <select name="talk_time"  class="pulldown time_pulldown">
+                                <!-- 選択肢はjavascriptで作成 -->
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -61,6 +65,11 @@
                             <li class="item item_thema item9">自分で設定する</li>
                         </ul>
                     </div>
+                    <div class="btn_area">
+                        <button class="clear_btn thema_clear moji">
+                            クリア
+                        </button>
+                    </div>
                 </div>
                 <!-- -----以下、追加ルール部分----- -->
                 <div class="extra_rule option">
@@ -74,6 +83,11 @@
                             <li class="item item_rule item14">トラブルメーカー有り</li>
                         </ul>
                     </div>
+                    <div class="btn_area">
+                        <button class="clear_btn rule_clear moji">
+                            クリア
+                        </button>
+                    </div>
                 </div>
                 <!-- -----以下、進行ボタン部分----- -->
                 <div class="btn_area">
@@ -84,6 +98,7 @@
             </div>
         </div>
     </main>  
-    
+
+    <script src="/pages/すっぽぬけワードウルフ/javascript/menu.js"></script>
 </body>
 </html>

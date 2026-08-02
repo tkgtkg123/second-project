@@ -25,6 +25,30 @@
         padding: 10px;
         font-size: 20px;
       }
+
+      // 以下、基本ルールデザイン
+
+      .base_rule {
+        text-align: center;
+
+        .pulldown {
+          width: 70px;
+          height: 30px;
+          text-align: center;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        .menber_select::after {
+          content: "人";
+          }
+        .time_select::after {
+          content: "分";
+        }
+      }
+
+      // 以下、トークテーマ、追加デザイン
+      
       .list_area {
         display: flex;
         justify-content: center;
@@ -40,26 +64,34 @@
           text-align: center;
           border-radius: 10px;
           cursor: pointer;
+          box-shadow: 0px 2px grey;
+          &:active {
+            transform: translateY(5px);
+            box-shadow: none;
+          }
         }
         
         .item_thema {
           background-color: palegreen;
           border: 1px solid #53ca0f;
         }
+        .selected_thema {
+          background-color: #88c088;
+        }
         .item_rule {
           background-color: deepskyblue;
           border: 1px solid #0f14ca;
-
+        }
+        .selected_rule {
+          background-color: #529cb5;
         }
       }
 
-      .menber_select::after {
-        content: "人";
-      }
-      .time_select::after {
-        content: "分";
-      }
-
+      .clear_btn {
+        font-size: 13px;
+        font-weight: bold;
+        width: 80px;
+      }      
     }
 
 

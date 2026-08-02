@@ -23,6 +23,22 @@
   padding: 10px;
   font-size: 20px;
 }
+.container .main .option .base_rule {
+  text-align: center;
+}
+.container .main .option .base_rule .pulldown {
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container .main .option .base_rule .menber_select::after {
+  content: "人";
+}
+.container .main .option .base_rule .time_select::after {
+  content: "分";
+}
 .container .main .option .list_area {
   display: flex;
   justify-content: center;
@@ -37,20 +53,30 @@
   text-align: center;
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: 0px 2px grey;
+}
+.container .main .option .list .item:active {
+  transform: translateY(5px);
+  box-shadow: none;
 }
 .container .main .option .list .item_thema {
   background-color: palegreen;
   border: 1px solid #53ca0f;
 }
+.container .main .option .list .selected_thema {
+  background-color: #88c088;
+}
 .container .main .option .list .item_rule {
   background-color: deepskyblue;
   border: 1px solid #0f14ca;
 }
-.container .main .option .menber_select::after {
-  content: "人";
+.container .main .option .list .selected_rule {
+  background-color: #529cb5;
 }
-.container .main .option .time_select::after {
-  content: "分";
+.container .main .option .clear_btn {
+  font-size: 13px;
+  font-weight: bold;
+  width: 80px;
 }
 .container .main .btn_area {
   display: flex;
