@@ -6,12 +6,13 @@
   /* ------以下、アプリ本体----- */
 }
 .container .main {
+  display: flex;
+  flex-wrap: wrap;
   height: 100%;
   width: 100%;
   padding: 20px;
   background-color: rgb(208, 193, 193);
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
 }
 .container .main .option {
   width: 33.333%;
@@ -45,6 +46,7 @@
 }
 .container .main .option .list {
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 .container .main .option .list .item {
@@ -100,4 +102,13 @@
 }
 .container .main .btn_area .neXt_page_btn .neXt_page_link {
   text-decoration: none;
+}
+.container .main .manual {
+  position: absolute;
+  background-color: #0f14ca;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
 }/*# sourceMappingURL=menu.css.map */
