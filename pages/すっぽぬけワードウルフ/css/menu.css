@@ -103,6 +103,9 @@
 .container .main .btn_area .neXt_page_btn .neXt_page_link {
   text-decoration: none;
 }
+.container .main .banish {
+  display: none;
+}
 .container .main .manual_background {
   position: absolute;
   top: 0;
