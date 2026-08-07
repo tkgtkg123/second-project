@@ -1,11 +1,13 @@
 'use strict';
-const wolf_pulldown = document.querySelector(".wolf_pulldown");
-const time_pulldown = document.querySelector(".time_pulldown");
-const item_themas = document.querySelectorAll(".item_thema");
-const item_rules = document.querySelectorAll(".item_rule");
-const thema_clear_btn = document.querySelector(".thema_clear");
-const rule_clear_btn = document.querySelector(".rule_clear");
-const rule_example_btn = document.querySelector("rule_example_btn");
+const wolf_pulldown = document.querySelector(".wolf_pulldown"); //ウルフ人数設定
+const time_pulldown = document.querySelector(".time_pulldown"); //トーク時間設定
+const item_themas = document.querySelectorAll(".item_thema"); //トークテーマ設定
+const item_rules = document.querySelectorAll(".item_rule"); //追加ルール設定
+const thema_clear_btn = document.querySelector(".thema_clear"); //トークテーマのクリアボタン
+const rule_clear_btn = document.querySelector(".rule_clear"); //追加ルールのクリアボタン
+const manual_btns = document.querySelectorAll(".manual_btn, .manual_close_btn"); //ルール説明ボタンと説明閉じる(×)ボタン
+const manual = document.querySelector(".manual"); //ルール説明文
+const manual_background = document.querySelector(".manual_background"); //ルール説明文の背景ぼかし
 
 // ウルフ人数の選択肢を作成
 for(let i =1; i<=5; i++){
@@ -48,6 +50,13 @@ rule_clear_btn.addEventListener("click", () =>{
         if (rule.classList.contains("selected_rule")){
             rule.classList.remove("selected_rule");
         };
+    });
+});
+
+manual_btns.forEach(btn => {
+    btn.addEventListener("click", () =>{
+        manual_background.classList.toggle("appear_manual_background");
+        manual.classList.toggle("appear_manual");
     });
 });
 

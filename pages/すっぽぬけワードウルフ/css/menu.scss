@@ -129,9 +129,6 @@
     }
 
     // -----以下、ルール説明部分-----
-    .banish {
-      display: none;
-    }
     .manual_background {
       position: absolute;
       top: 0;
@@ -139,18 +136,28 @@
       width: 100%;
       height: 100%;
       backdrop-filter: blur(5px);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s;
+    }
+    .appear_manual_background {
+      opacity: 1;
+      visibility: visible;
     }
     .manual {
       position: absolute;
       top: 40%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -55%);
       background-color: white;
       width: 80%;
       height: 70%;
       text-align: center;
       border: 2px solid black;
       border-radius: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s, transform 0.3s;
 
       .manual_close_btn_area {
         display: flex;
@@ -176,6 +183,11 @@
       .manual_text {
         font-size: 16px;
       }
+    }
+    .appear_manual {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+      visibility: visible;
     }
   }
 }
