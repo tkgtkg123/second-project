@@ -1,65 +1,55 @@
-.header {
-  background-color: rgb(255, 119, 0);
-  height: 4em;
-  width: 100vw;
-  display: flex;
-}
-.header .logo-area {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  justify-content: flex-start;
-}
-.header .logo-area .logo {
-  border: 2px solid black;
-  height: 51px;
-  width: 71px;
-  margin: 5px 0 5px 40px;
-}
-.header .logo-area .logo:hover {
-  cursor: pointer;
-}
-.header .button-area {
-  height: 100%;
-  width: 30%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-end;
-}
-.header .button-area .btn {
-  height: 80%;
-  margin: 1% 1em;
-  font-size: 15px;
-  border-radius: 5px;
-}
-.header .button-area .btn:hover {
-  cursor: pointer;
-}
-.header .button-area .logout {
-  margin-right: 0;
-}
-
-.space {
-  height: 20px;
-  width: 100vw;
-}
-
-.content-area {
+@charset "UTF-8";
+.container {
+  /* ------以下、画面全体----- */
   height: 100vh;
   width: 100vw;
+  /* ------以下、アプリ本体----- */
 }
-.content-area .logout-area {
+.container .main {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(47, 46, 46);
+}
+.container .main .qestion_area {
+  width: 100%;
+  text-align: center;
+}
+.container .main .answer_area {
   display: flex;
-  justify-content: flex-end;
-  margin: 50px auto;
-  width: 80%;
+  justify-content: space-evenly;
 }
-.content-area .logout-area .logout {
-  font-size: 18px;
-  color: blue;
+.container .main .answer_area .answer {
+  border: solid 2px black;
+  border-radius: 50px;
+  animation: rainbow 3s linear infinite;
 }
-.content-area .logout-area .logout:hover {
-  color: gray;
-  text-decoration: none;
-  cursor: pointer;
+.container .main .moji {
+  color: ghostwhite;
+  font-size: 23px;
+  padding: 30px;
+}
+
+@keyframes rainbow {
+  0% {
+    border-color: red;
+  }
+  16% {
+    border-color: orange;
+  }
+  33% {
+    border-color: yellow;
+  }
+  50% {
+    border-color: green;
+  }
+  66% {
+    border-color: cyan;
+  }
+  83% {
+    border-color: blue;
+  }
+  100% {
+    border-color: red;
+  }
 }/*# sourceMappingURL=style.css.map */
