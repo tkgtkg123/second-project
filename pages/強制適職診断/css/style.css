@@ -14,20 +14,25 @@
 .container .main .qestion_area {
   width: 100%;
   text-align: center;
+  font-weight: bold;
+  padding: 30px;
 }
 .container .main .answer_area {
   display: flex;
   justify-content: space-evenly;
+  padding: 30px;
 }
 .container .main .answer_area .answer {
   border: solid 2px black;
   border-radius: 50px;
   animation: rainbow 3s linear infinite;
+  cursor: pointer;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0);
 }
 .container .main .moji {
   color: ghostwhite;
   font-size: 23px;
-  padding: 30px;
 }
 
 @keyframes rainbow {
